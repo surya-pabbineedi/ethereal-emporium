@@ -1,0 +1,8 @@
+<div class="product-images">
+  @for (productImage of product().images; track $index) {
+  <span
+    class="product-images__image-dot"
+    (click)="selectedImage.emit(productImage)"
+  ></span>
+  }
+</div>

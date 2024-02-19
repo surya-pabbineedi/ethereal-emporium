@@ -1,0 +1,37 @@
+<div class="products-container">
+  <div class="products-container__header">
+    <mat-toolbar>
+      <span>Products</span>
+      <ethereal-emporium-app-product-search></ethereal-emporium-app-product-search>
+
+      <div class="actions">
+        <mat-button-toggle-group [(ngModel)]="productsView">
+          <mat-button-toggle value="grid"
+            ><mat-icon>grid_on</mat-icon></mat-button-toggle
+          >
+          <mat-button-toggle value="table"
+            ><mat-icon>dehaze</mat-icon></mat-button-toggle
+          >
+        </mat-button-toggle-group>
+      </div>
+    </mat-toolbar>
+  </div>
+  @if (isGridView()) { @defer {
+  <div class="products-container__products card-view">
+    @for (product of store.filteredProducts(); track product.id) {
+    <ethereal-emporium-app-product-card
+      class="products-container__products__product-card"
+      [product]="product"
+    ></ethereal-emporium-app-product-card>
+    } @empty {
+    <p>No products found</p>
+    }
+  </div>
+  } @placeholder {
+  <mat-spinner></mat-spinner>
+  } } @else { @defer () {
+  <ethereal-emporium-app-product-table
+    [products]="store.filteredProducts()"
+  ></ethereal-emporium-app-product-table>
+  } }
+</div>

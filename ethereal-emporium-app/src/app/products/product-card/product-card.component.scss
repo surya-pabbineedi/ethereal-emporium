@@ -1,0 +1,21 @@
+.product-card {
+  &__header {
+    &__price {
+      text-decoration: line-through;
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__image {
+        width: fit-content;
+      }
+
+      &__images {
+        display: flex;
+      }
+    }
+  }
+}

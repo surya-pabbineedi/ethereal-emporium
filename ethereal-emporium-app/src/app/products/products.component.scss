@@ -1,0 +1,32 @@
+.products-container {
+  &__header {
+    mat-toolbar {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+
+      .search-control {
+        margin-top: 20px;
+        width: 400px;
+
+        mat-icon {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+    &__product-card {
+      // Styles for the header inside the container
+      &:hover {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

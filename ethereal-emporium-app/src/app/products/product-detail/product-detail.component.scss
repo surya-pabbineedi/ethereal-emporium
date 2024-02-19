@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.product-details {
+  flex: 1;
+  max-width: 600px;
+
+  &__title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    margin-bottom: 10px;
+
+    &-label {
+      font-weight: bold;
+    }
+  }
+}
+
+.image-gallery {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}

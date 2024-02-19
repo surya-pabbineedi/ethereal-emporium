@@ -1,0 +1,22 @@
+.product-images {
+  &__thumbnail {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  &__image-dot {
+    width: 5px;
+    height: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    background: deepskyblue;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+      width: 8px;
+      height: 8px;
+      background: dodgerblue;
+    }
+  }
+}
