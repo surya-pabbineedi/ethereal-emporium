@@ -4,10 +4,8 @@ import { MockProductService } from 'src/test/mocks/services/mock-product.service
 import { ProductService } from '../services/product.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MOCK_PRODUCTS } from 'src/test/mocks/mock-products';
-import * as exp from 'constants';
-import { ProductStore } from './product.store';
 
-describe.only('ProductsComponent', () => {
+describe('ProductsComponent', () => {
   let component: ProductsComponent;
   let fixture: ComponentFixture<ProductsComponent>;
 
