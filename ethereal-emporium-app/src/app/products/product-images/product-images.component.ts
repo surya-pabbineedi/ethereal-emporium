@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, input } from '@angular/core';
+import { Component, EventEmitter, Input, Output, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Product } from 'src/app/models/product';
 
@@ -10,6 +10,6 @@ import { Product } from 'src/app/models/product';
   styleUrl: './product-images.component.scss',
 })
 export class ProductImagesComponent {
-  product = input.required<Product>();
+  @Input({ required: true }) product!: Product;
   @Output() selectedImage = new EventEmitter<string>();
 }
