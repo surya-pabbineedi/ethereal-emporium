@@ -1,1 +1,30 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport mode="over">
+        <mat-toolbar>Ethereal Emporium</mat-toolbar>
+        <mat-nav-list>
+            @for (item of navItems; track $index) {
+            <a mat-list-item [routerLink]="[item.route]" (click)="drawer.toggle()">{{ item.name }}</a>
+            }
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+
+            <span class="spacer"></span>
+
+            <button type="button" mat-icon-button [routerLink]="['/home']">
+                <mat-icon>home</mat-icon>
+            </button>
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <div class="progress-container">
+            @if(store.isLoading()) {
+            <mat-progress-bar mode="query" class="global-progress"></mat-progress-bar>
+            }
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

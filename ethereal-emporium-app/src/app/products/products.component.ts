@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { FormsModule } from '@angular/forms';
 import { ProductTableComponent } from './product-table/product-table.component';
@@ -30,6 +31,7 @@ import { ProductSearchComponent } from './product-search/product-search.componen
     ProductCardComponent,
     ProductTableComponent,
     ProductSearchComponent,
+    ScrollingModule
   ],
   providers: [ProductStore],
   templateUrl: './products.component.html',

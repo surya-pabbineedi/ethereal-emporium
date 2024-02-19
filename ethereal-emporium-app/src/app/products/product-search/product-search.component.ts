@@ -60,7 +60,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
       </mat-autocomplete>
     </mat-form-field>
   `,
-  styles: `.search-control{width: 450px;} 
+  styles: `.search-control{width: 450px; margin-top: 25px} 
   mat-spinner {
     margin-right: 10px
   }`,

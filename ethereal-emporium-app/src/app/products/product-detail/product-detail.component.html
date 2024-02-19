@@ -4,9 +4,15 @@
 
   <span class="spacer"></span>
 
-  <button mat-icon-button [routerLink]="['/products']">
-    <mat-icon>home</mat-icon>
+  @if(showCloseAction()) {
+  <button mat-icon-button (click)="handleClose()">
+    <mat-icon>close</mat-icon>
   </button>
+  }@else {
+  <button mat-raised-button color="accent" [routerLink]="['/products']">
+    Products
+  </button>
+  }
 </mat-toolbar>
 
 <div class="container">
@@ -39,12 +45,7 @@
   </div>
 
   <div class="image-gallery">
-    <img
-      *ngFor="let image of product.images"
-      [src]="image"
-      alt="Product Image"
-      class="image-gallery__image"
-    />
+    <img *ngFor="let image of product.images" [src]="image" alt="Product Image" class="image-gallery__image" />
   </div>
 </div>
 

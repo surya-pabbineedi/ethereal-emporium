@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, model } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Product } from 'src/app/models/product';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,4 +21,10 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export default class ProductDetailComponent {
   product = input.required<Product>();
+  showCloseAction = input<boolean>(false);
+  close = model(false);
+
+  handleClose() {
+    this.close.set(true);
+  }
 }

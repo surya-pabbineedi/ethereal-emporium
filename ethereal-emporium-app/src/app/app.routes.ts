@@ -7,13 +7,18 @@ import {
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'products',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
     path: '404',
     loadComponent: () => import('./core/not-found.component'),
     title: 'Not Found',
+  },
+  {
+    path: 'home',
+    loadComponent: () => import('./core/home/home.component'),
+    title: 'Home',
   },
   {
     path: 'products',

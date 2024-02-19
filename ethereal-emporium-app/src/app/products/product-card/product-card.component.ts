@@ -7,6 +7,8 @@ import { ProductImagesComponent } from '../product-images/product-images.compone
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ProductDetailDialogComponent } from '../product-detail-dialog/product-detail-dialog.component';
 
 @Component({
   selector: 'ethereal-emporium-app-product-card',
@@ -19,6 +21,7 @@ import { RouterLink } from '@angular/router';
     ProductImagesComponent,
     MatBadgeModule,
     RouterLink,
+    MatDialogModule,
   ],
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss'],
@@ -41,7 +44,18 @@ export class ProductCardComponent {
     );
   });
 
+  constructor(private dialog: MatDialog) {}
+
   handleSelectedImage(preferredImage: string) {
     this.selectedImage.set(preferredImage);
+  }
+
+  openProductDialog() {
+    this.dialog.open(ProductDetailDialogComponent, {
+      id: ProductDetailDialogComponent.DIALOG_ID,
+      data: {
+        product: this.product(),
+      },
+    });
   }
 }
