@@ -31,6 +31,6 @@ export class AppComponent {
     { name: 'Demo Products', route: '/products' },
   ];
 
-  title = 'ethereal-emporium-app';
+  title = 'Ethereal Emporium';
   store = inject(AppStore);
 }

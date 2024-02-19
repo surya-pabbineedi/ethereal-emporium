@@ -45,7 +45,12 @@
   </div>
 
   <div class="image-gallery">
-    <img *ngFor="let image of product.images" [src]="image" alt="Product Image" class="image-gallery__image" />
+    <img
+      *ngFor="let image of product.images"
+      [src]="image"
+      alt="Product Image"
+      class="image-gallery__image"
+    />
   </div>
 </div>
 

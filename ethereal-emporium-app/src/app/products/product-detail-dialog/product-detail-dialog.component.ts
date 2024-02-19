@@ -33,7 +33,6 @@ export class ProductDetailDialogComponent {
   }
 
   handleClose() {
-    console.log('Close Dialog');
     this.dialogService
       .getDialogById(ProductDetailDialogComponent.DIALOG_ID)
       ?.close();

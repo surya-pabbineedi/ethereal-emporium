@@ -31,7 +31,7 @@ import { ProductSearchComponent } from './product-search/product-search.componen
     ProductCardComponent,
     ProductTableComponent,
     ProductSearchComponent,
-    ScrollingModule
+    ScrollingModule,
   ],
   providers: [ProductStore],
   templateUrl: './products.component.html',

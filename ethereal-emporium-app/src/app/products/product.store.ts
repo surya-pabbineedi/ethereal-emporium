@@ -25,10 +25,10 @@ export const ProductStore = signalStore(
   withState(initialState),
   withHooks({
     onInit: (store) => {
-      console.log('ProductStore initialized with store:', store);
+      console.log('ProductStore initialized with store');
     },
     onDestroy({ products }) {
-      console.log('count on destroy', products());
+      console.log('count on destroy', products().length);
     },
   }),
   withMethods((store) => {
