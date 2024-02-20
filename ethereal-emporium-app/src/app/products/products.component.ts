@@ -44,6 +44,6 @@ export default class ProductsComponent {
   }
 
   readonly store = inject(ProductStore);
-  productsView = model('table');
+  productsView = model('grid');
   isGridView = computed(() => this.productsView() !== 'table');
 }

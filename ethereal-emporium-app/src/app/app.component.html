@@ -5,20 +5,17 @@
       @for (item of navItems; track $index) {
       <a mat-list-item [routerLink]="[item.route]" (click)="drawer.toggle()">{{
         item.name
-      }}</a>
+        }}</a>
       }
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-      >
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+
+      <h1 data-cy="app-title">{{title}}</h1>
 
       <span class="spacer"></span>
 

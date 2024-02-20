@@ -1,7 +1,7 @@
 <div class="products-container">
   <div class="products-container__header">
     <mat-toolbar>
-      <span>Products</span>
+      <h1>Products</h1>
       <ethereal-emporium-app-product-search></ethereal-emporium-app-product-search>
 
       <div class="actions">
@@ -28,7 +28,9 @@
     }
   </div>
   } @placeholder {
-  <mat-spinner></mat-spinner>
+  <div class="container">
+    <mat-spinner></mat-spinner>
+  </div>
   } } @else { @defer () {
   <ethereal-emporium-app-product-table
     [products]="store.filteredProducts()"

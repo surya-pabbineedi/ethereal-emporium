@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ProductDetailDialogComponent } from '../product-detail-dialog/product-detail-dialog.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'ethereal-emporium-app-product-card',
@@ -22,6 +24,8 @@ import { ProductDetailDialogComponent } from '../product-detail-dialog/product-d
     MatBadgeModule,
     RouterLink,
     MatDialogModule,
+    OverlayModule,
+    MatProgressSpinnerModule,
   ],
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss'],
@@ -30,6 +34,7 @@ export class ProductCardComponent {
   @Input({ required: true }) product!: Product;
 
   selectedImage = model<string>();
+  isOpen = false;
   productImage = computed(() => {
     if (this.selectedImage()) {
       return this.selectedImage();
@@ -41,11 +46,11 @@ export class ProductCardComponent {
   discountPercentage = computed(() => {
     return Math.round(
       this.product.price -
-      (this.product.price * this.product.discountPercentage) / 100
+        (this.product.price * this.product.discountPercentage) / 100
     );
   });
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {}
 
   handleSelectedImage(preferredImage: string) {
     this.selectedImage.set(preferredImage);

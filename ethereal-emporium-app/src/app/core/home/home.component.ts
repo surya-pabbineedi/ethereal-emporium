@@ -1,6 +1,6 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, NgIf } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -9,6 +9,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { RouterLink } from '@angular/router';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import ProductsComponent from 'src/app/products/products.component';
+import { Product } from 'src/app/models/product';
+import { ProductService } from 'src/app/services/product.service';
+import { PagedResponse } from 'src/app/models/paged-response';
+import { FeatureDeferComponent } from 'src/app/demo/feature-defer/feature-defer.component';
 
 @Component({
   selector: 'ethereal-emporium-app-home',
@@ -23,6 +31,7 @@ import { RouterLink } from '@angular/router';
     MatIconModule,
     AsyncPipe,
     RouterLink,
+    FeatureDeferComponent,
   ],
 })
 export default class HomeComponent {

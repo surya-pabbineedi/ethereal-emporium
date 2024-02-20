@@ -8,17 +8,43 @@
       <mat-card-subtitle class="product-card__header__d-price">
         <mat-chip color="accent" selected>{{
           discountPercentage() | currency
-          }}</mat-chip>
+        }}</mat-chip>
       </mat-card-subtitle>
       <mat-card-subtitle class="product-card__header__price">{{
         product.price | currency
-        }}</mat-card-subtitle>
+      }}</mat-card-subtitle>
 
       <div class="product-card__header__images">
-        <img [routerLink]="['/products', product.id]" class="product-card__header__images__thumbnail" mat-card-lg-image
-          [src]="productImage()" [alt]="product.description" />
-        <ethereal-emporium-app-product-images class="product-card__header__images__images" [product]="product"
-          (selectedImage)="handleSelectedImage($any($event))"></ethereal-emporium-app-product-images>
+        <img
+          [routerLink]="['/products', product.id]"
+          class="product-card__header__images__thumbnail"
+          mat-card-lg-image
+          [src]="productImage()"
+          [alt]="product.description"
+          (mouseover)="isOpen = true"
+          (mouseout)="isOpen = false"
+          cdkOverlayOrigin
+          #trigger="cdkOverlayOrigin"
+        />
+        <ethereal-emporium-app-product-images
+          class="product-card__header__images__images"
+          [product]="product"
+          (selectedImage)="handleSelectedImage($any($event))"
+        ></ethereal-emporium-app-product-images>
+
+        <ng-template
+          cdkConnectedOverlay
+          [cdkConnectedOverlayOrigin]="trigger"
+          [cdkConnectedOverlayOpen]="isOpen"
+        >
+          <mat-card class="product-card__header__images__overlay">
+            @defer {
+            <img mat-card-xl-image [src]="productImage()" />
+            }@placeholder(minimum 1s) {
+            <mat-spinner [diameter]="30"></mat-spinner>
+            }
+          </mat-card>
+        </ng-template>
       </div>
     </mat-card-title-group>
   </mat-card-header>
@@ -27,7 +53,11 @@
     <button mat-button color="primary" (click)="openProductDialog()">
       VIEW
     </button>
-    <button mat-flat-button color="secondary" [routerLink]="['/products/', product.id]">
+    <button
+      mat-flat-button
+      color="secondary"
+      [routerLink]="['/products/', product.id]"
+    >
       BUY
     </button>
   </mat-card-actions>

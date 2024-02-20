@@ -1,0 +1,160 @@
+<div class="feature-cf-defer-demo">
+  <h1>Defer - Partial template loading</h1>
+
+  <cdk-accordion class="defer-feature-accordion">
+    @for (item of deferUseCases; track item; let index = $index) {
+    <cdk-accordion-item
+      #accordionItem="cdkAccordionItem"
+      class="defer-feature-accordion-item"
+      role="button"
+      tabindex="0"
+      [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded"
+      [attr.aria-controls]="'accordion-body-' + index"
+    >
+      <div
+        class="defer-feature-accordion-item-header"
+        (click)="accordionItem.toggle()"
+      >
+        {{ item }}
+        <span class="defer-feature-accordion-item-description">
+          Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+        </span>
+      </div>
+      <div
+        class="defer-feature-accordion-item-body"
+        role="region"
+        [style.display]="accordionItem.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' + index"
+        [attr.aria-labelledby]="'accordion-header-' + index"
+      >
+        @switch (index) {
+        <!-- @defer -->
+        @case (0) { @defer {
+        <h2>I will be loaded on demand</h2>
+        } }
+
+        <!-- @defer with placeholder -->
+        @case (1) { @defer {
+        <h2>I will be loaded on demand and I have a placeholder</h2>
+
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+
+        }@placeholder(minimum 5s) {
+        <code
+          >Placeholder is shown for 5 seconds. Placeholder is always eagerly
+          loaded</code
+        >
+        } }
+
+        <!-- @defer with loading-->
+        @case(2){ @defer {
+        <h2>I will be loaded on demand and I have a loading indicator</h2>
+        } @loading (minimum 5s) {
+        <p>Loading...</p>
+        } }
+
+        <!-- @defer triggers-->
+        @case(3){ @defer(on timer(15s); prefetch on timer(10s)) {
+        <h2>I am loaded after 10s and displayed after 15s</h2>
+        } @placeholder {
+        <code>Placeholder</code>
+        } }
+
+        <!-- error -->
+        @case (4) { @defer {
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+        } @error {
+        <p>Failed to load the content</p>
+        } @loading {
+        <p>Loading...</p>
+        } @placeholder {
+        <code>Placeholder</code>
+        } }
+
+        <!-- viewport -->
+        @case (5) { @defer (on viewport) {
+        <div class="vspacer"></div>
+        <h2>I will be loaded if the content is in viewport</h2>
+        } @placeholder {
+        <code>Placeholder</code>
+        } }
+
+        <!-- viewport -->
+        @case (6) {
+        <div #greeting>Hello!</div>
+        @defer (on viewport(greeting)) {
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+        } @placeholder {
+        <code>Placeholder - Click me to see the content</code>
+        } }
+
+        <!-- viewport -->
+        @case (7) { @defer (on interaction) {
+        <h2>I will be loaded if the content is in viewport</h2>
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+        } @placeholder {
+        <code>Placeholder</code>
+        } }
+
+        <!-- interaction -->
+        @case (8) {
+        <input type="text" #inputTmpl />
+        <button #btnTmpl>button</button>
+
+        @defer (on interaction(inputTmpl); prefetch on interaction(btnTmpl)) {
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+        } @placeholder {
+        <div>
+          <code>Placeholder - Focus the input</code>
+        </div>
+        } }
+
+        <!-- hover -->
+        @case (9) {
+        <button #btnTmpl>button</button>
+
+        @defer (on interaction(btnTmpl); prefetch on hover) {
+        <h2>I will be loaded if the input is focused</h2>
+        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+          <ethereal-emporium-app-products
+            [products]="productsResponse"
+          ></ethereal-emporium-app-products
+        ></ng-container>
+        } @placeholder {
+        <div>
+          <code>Placeholder - Click the button</code>
+        </div>
+        } }
+
+        <!-- default -->
+        @default {
+        <div class="defer-feature-accordion-item-body-content">
+          <p>Use case - {{ item }}</p>
+        </div>
+        } }
+      </div>
+    </cdk-accordion-item>
+    }
+  </cdk-accordion>
+</div>
