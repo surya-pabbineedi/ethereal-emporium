@@ -1,3 +1,4 @@
+using System.Globalization;
 using EtherealEmporium.API.Models;
 using MongoDB.Bson;
 
@@ -14,14 +15,14 @@ public static class ProductRepository
         return ProductsStore;
     }
 
-    public static Product? GetProductById(ObjectId productId)
+    private static Product? GetProductById(int productId)
     {
         return ProductsStore.Find(entry => entry.Id == productId);
     }
 
     public static Product AddProduct(Product product)
     {
-        product.Id = ObjectId.GenerateNewId();
+        product.Id = 1;
         ProductsStore.Add(product);
 
         return product;
@@ -29,6 +30,9 @@ public static class ProductRepository
 
     public static void UpdateProduct(Product product)
     {
-        var storeProduct = GetProductById(product.Id);
+        if (product.Id != null)
+        {
+            var storeProduct = GetProductById(product.Id);
+        }
     }
 }

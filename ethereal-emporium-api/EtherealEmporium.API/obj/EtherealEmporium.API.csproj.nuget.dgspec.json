@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/EtherealEmporium.API.csproj": {}
+    "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/EtherealEmporium.API.csproj": {}
   },
   "projects": {
-    "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/EtherealEmporium.API.csproj": {
+    "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/EtherealEmporium.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/EtherealEmporium.API.csproj",
+        "projectUniqueName": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/EtherealEmporium.API.csproj",
         "projectName": "EtherealEmporium.API",
-        "projectPath": "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/EtherealEmporium.API.csproj",
+        "projectPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/EtherealEmporium.API.csproj",
         "packagesPath": "/Users/suryap.abbineedi/.nuget/packages/",
-        "outputPath": "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/obj/",
+        "outputPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/suryap.abbineedi/.nuget/NuGet/NuGet.Config"

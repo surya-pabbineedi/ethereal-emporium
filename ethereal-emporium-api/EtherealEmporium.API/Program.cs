@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddTransient<IProductService, ProductService>();
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDBSettings"));
+builder.Services.Configure<ApiServiceConfig>(builder.Configuration.GetSection("ApiServiceConfig"));
+builder.Services.AddHttpClient<ProductService>();
 
 var mongoSettings = builder.Configuration.GetSection("MongoDBSettings").Get<MongoDBSettings>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

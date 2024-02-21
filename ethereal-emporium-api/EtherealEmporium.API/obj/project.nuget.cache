@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9YfQ2HyaB9tD21HXKlrVn1Zu+sPYBZK4EPs7IVBugXTMFwQzCevugPR8DwZRowH56+ut76ozNxvIwSW0Tm8w1w==",
+  "dgSpecHash": "jM8I8yOPWfQ68ydspP9F1xWoHynQMKX8UyvjK0ynNTq6SbuN6oM1noWj7MgC0lQmLdb46vL5mdK9Mswis7c7HA==",
   "success": true,
-  "projectFilePath": "/Users/suryap.abbineedi/Work/Ethereal Emporium/EtherealEmporium.API/EtherealEmporium.API/EtherealEmporium.API.csproj",
+  "projectFilePath": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EtherealEmporium.API/EtherealEmporium.API.csproj",
   "expectedPackageFiles": [
     "/Users/suryap.abbineedi/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/suryap.abbineedi/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
