@@ -7,13 +7,21 @@ import {
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'products',
     pathMatch: 'full',
   },
   {
     path: '404',
     loadComponent: () => import('./core/not-found.component'),
     title: 'Not Found',
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./core/login/login.component'),
+    title: 'Login',
+    data: {
+      showHeader: false,
+    },
   },
   {
     path: 'home',
@@ -35,5 +43,9 @@ export const appRoutes: Route[] = [
     resolve: {
       product: ProductResolver,
     },
+  },
+  {
+    path: 'roles',
+    loadComponent: () => import('./roles/roles.component'),
   },
 ];

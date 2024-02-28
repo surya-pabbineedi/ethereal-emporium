@@ -39,8 +39,8 @@ import { ProductSearchComponent } from './product-search/product-search.componen
 })
 export default class ProductsComponent {
   @Input()
-  set products(productResponse: PagedResponse<Product>) {
-    this.store.setProducts(productResponse.items);
+  set products(productResponse: Product[]) {
+    this.store.setProducts(productResponse);
   }
 
   readonly store = inject(ProductStore);

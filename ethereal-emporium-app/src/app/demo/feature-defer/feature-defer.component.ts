@@ -26,9 +26,7 @@ import { ProductService } from 'src/app/services/product.service';
   ],
 })
 export class FeatureDeferComponent {
-  productsResponse$: Observable<PagedResponse<Product>> = inject(
-    ProductService
-  ).getProducts$() as Observable<PagedResponse<Product>>;
+  productsResponse$ = inject(ProductService).getProducts$();
 
   deferUseCases = [
     '@defer',

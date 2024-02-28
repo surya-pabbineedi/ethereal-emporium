@@ -93,9 +93,9 @@
         <div #greeting>Hello!</div>
         @defer (on viewport(greeting)) {
         <ng-container *ngIf="productsResponse$ | async as productsResponse">
-          <ethereal-emporium-app-products
+          <!-- <ethereal-emporium-app-products
             [products]="productsResponse"
-          ></ethereal-emporium-app-products
+          ></ethereal-emporium-app-products -->
         ></ng-container>
         } @placeholder {
         <code>Placeholder - Click me to see the content</code>
@@ -105,9 +105,9 @@
         @case (7) { @defer (on interaction) {
         <h2>I will be loaded if the content is in viewport</h2>
         <ng-container *ngIf="productsResponse$ | async as productsResponse">
-          <ethereal-emporium-app-products
+          <!-- <ethereal-emporium-app-products
             [products]="productsResponse"
-          ></ethereal-emporium-app-products
+          ></ethereal-emporium-app-products -->
         ></ng-container>
         } @placeholder {
         <code>Placeholder</code>
@@ -119,11 +119,11 @@
         <button #btnTmpl>button</button>
 
         @defer (on interaction(inputTmpl); prefetch on interaction(btnTmpl)) {
-        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+        <!-- <ng-container *ngIf="productsResponse$ | async as productsResponse">
           <ethereal-emporium-app-products
             [products]="productsResponse"
           ></ethereal-emporium-app-products
-        ></ng-container>
+        ></ng-container> -->
         } @placeholder {
         <div>
           <code>Placeholder - Focus the input</code>
@@ -136,11 +136,11 @@
 
         @defer (on interaction(btnTmpl); prefetch on hover) {
         <h2>I will be loaded if the input is focused</h2>
-        <ng-container *ngIf="productsResponse$ | async as productsResponse">
+        <!-- <ng-container *ngIf="productsResponse$ | async as productsResponse">
           <ethereal-emporium-app-products
             [products]="productsResponse"
           ></ethereal-emporium-app-products
-        ></ng-container>
+        ></ng-container> -->
         } @placeholder {
         <div>
           <code>Placeholder - Click the button</code>

@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppStore } from './core/app.store';
 import { AsyncPipe } from '@angular/common';
@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   standalone: true,
@@ -20,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     AsyncPipe,
     RouterModule,
-    MatProgressBarModule
+    MatProgressBarModule,
   ],
   selector: 'ethereal-emporium-app-root',
   templateUrl: './app.component.html',
@@ -34,4 +33,5 @@ export class AppComponent {
 
   title = 'Ethereal Emporium';
   store = inject(AppStore);
+  activatedRoute = inject(ActivatedRoute);
 }

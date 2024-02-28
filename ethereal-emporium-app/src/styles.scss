@@ -10,4 +10,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+}
+
+.progress-spinner-with-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

@@ -11,6 +11,9 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ProductDetailDialogComponent } from '../product-detail-dialog/product-detail-dialog.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatMenuModule } from '@angular/material/menu';
+import ProductDetailComponent from '../product-detail/product-detail.component';
+import { FeatureDeferComponent } from 'src/app/demo/feature-defer/feature-defer.component';
 
 @Component({
   selector: 'ethereal-emporium-app-product-card',
@@ -26,6 +29,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatDialogModule,
     OverlayModule,
     MatProgressSpinnerModule,
+    MatMenuModule,
+    ProductDetailComponent,
+    FeatureDeferComponent
   ],
   templateUrl: './product-card.component.html',
   styleUrls: ['./product-card.component.scss'],
@@ -50,7 +56,13 @@ export class ProductCardComponent {
     );
   });
 
+  productDetailTrigger = model<boolean>();
+
   constructor(private dialog: MatDialog) {}
+
+  handleMouseoverProductDetail() {
+    this.productDetailTrigger.set(true);
+  }
 
   handleSelectedImage(preferredImage: string) {
     this.selectedImage.set(preferredImage);

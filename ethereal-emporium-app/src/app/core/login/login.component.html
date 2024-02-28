@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="login">
+    <h2 class="login__title">Portal Passage: Unlock Your Digital Realm</h2>
+    <form class="login__form" (ngSubmit)="login()">
+      <mat-form-field class="login__form__email">
+        <mat-label>Email</mat-label>
+        <input
+          type="email"
+          matInput
+          [formControl]="emailFormControl"
+          placeholder="Ex. pat@example.com"
+        />
+        @if (emailFormControl.hasError('email') &&
+        !emailFormControl.hasError('required')) {
+        <mat-error>Please enter a valid email address</mat-error>
+        } @if (emailFormControl.hasError('required')) {
+        <mat-error>Email is <strong>required</strong></mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field class="login__form__password">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput [formControl]="passwordFormControl" />
+        @if (passwordFormControl.hasError('email') &&
+        !passwordFormControl.hasError('required')) {
+        <mat-error>Please enter a valid email address</mat-error>
+        } @if (passwordFormControl.hasError('required')) {
+        <mat-error>Password is <strong>required</strong></mat-error>
+        }
+      </mat-form-field>
+
+      <button class="login__form__action-login" mat-raised-button type="submit">
+        <div class="progress-spinner-with-text">
+          Login @if(store.isLoginInProgress()) {
+          <mat-spinner [diameter]="25"></mat-spinner>
+          }
+        </div>
+      </button>
+    </form>
+  </div>
+</div>

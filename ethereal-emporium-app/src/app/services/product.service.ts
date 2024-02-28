@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { Product } from '../models/product';
-import { PagedResponse } from '../models/paged-response';
+import { API_URL } from '../app.config';
 
 type ProductResponse = {
   products: Product[];
@@ -12,19 +12,19 @@ type ProductResponse = {
   providedIn: 'root',
 })
 export class ProductService {
-  constructor(private readonly http: HttpClient) {}
+  constructor(
+    private readonly http: HttpClient,
+    @Inject(API_URL) private apiURL: string
+  ) {}
 
-  getProducts$(): Observable<PagedResponse<Product>> {
-    return this.http.get('https://dummyjson.com/products').pipe(
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      map((response: any) => ({ ...response, items: response.products }))
-    ) as Observable<PagedResponse<Product>>;
+  getProducts$(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.apiURL}/api/Product`);
   }
 
   getProduct$(id: string | null): Observable<Product> {
     if (!id) throw new Error('No product id');
 
-    return this.http.get<Product>(`https://dummyjson.com/products/${id}`);
+    return this.http.get<Product>(`${this.apiURL}/api/Product${id}`);
   }
 
   searchProducts(incomingQuery: string): Observable<Product[]> {
