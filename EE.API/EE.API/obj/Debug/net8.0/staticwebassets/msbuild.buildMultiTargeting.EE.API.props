@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/EE.API.props" />
+</Project>
