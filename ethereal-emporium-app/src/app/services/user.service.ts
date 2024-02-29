@@ -12,8 +12,8 @@ export class UserService {
     @Inject(API_URL) private api_url: string
   ) {}
 
-  login(email: string, password: string): Observable<{ token: string }> {
-    return this.http.post<{ token: string }>(`${this.api_url}/api/login`, {
+  login(email: string, password: string): Observable<{ accessToken: string }> {
+    return this.http.post<{ accessToken: string }>(`${this.api_url}/login`, {
       email,
       password,
     });

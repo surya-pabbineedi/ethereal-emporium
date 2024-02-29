@@ -7,7 +7,7 @@ import {
 export const appRoutes: Route[] = [
   {
     path: '',
-    redirectTo: 'products',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {

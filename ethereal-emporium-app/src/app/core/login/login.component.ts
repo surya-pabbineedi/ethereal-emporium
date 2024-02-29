@@ -1,11 +1,19 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  inject,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { AppStore } from '../app.store';
 import { take } from 'rxjs';
-import { MatProgressSpinner, MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {
+  MatProgressSpinner,
+  MatProgressSpinnerModule,
+} from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'ethereal-emporium-app-login',
@@ -23,8 +31,8 @@ import { MatProgressSpinner, MatProgressSpinnerModule } from '@angular/material/
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class LoginComponent {
-  emailFormControl = new FormControl<string>('');
-  passwordFormControl = new FormControl<string>('');
+  emailFormControl = new FormControl<string>('indian.surya@gmail.com');
+  passwordFormControl = new FormControl<string>('Welcometonature@123');
   store = inject(AppStore);
 
   login() {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/suryap.abbineedi/Work/ethereal-emporium/EE.API/EE.API/EE.API.csproj": {}
+    "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/EE.API.csproj": {}
   },
   "projects": {
-    "/Users/suryap.abbineedi/Work/ethereal-emporium/EE.API/EE.API/EE.API.csproj": {
+    "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/EE.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/suryap.abbineedi/Work/ethereal-emporium/EE.API/EE.API/EE.API.csproj",
+        "projectUniqueName": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/EE.API.csproj",
         "projectName": "EE.API",
-        "projectPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/EE.API/EE.API/EE.API.csproj",
+        "projectPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/EE.API.csproj",
         "packagesPath": "/Users/suryap.abbineedi/.nuget/packages/",
-        "outputPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/EE.API/EE.API/obj/",
+        "outputPath": "/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/suryap.abbineedi/.nuget/NuGet/NuGet.Config"
@@ -55,6 +55,22 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

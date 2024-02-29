@@ -1,9 +1,7 @@
 namespace EE.API.Models;
 
-public class Product
+public class Product: BaseEntity
 {
-    public string Id { get; set; }
-
     public string? Title { get; set; }
 
     public string? Description { get; set; }

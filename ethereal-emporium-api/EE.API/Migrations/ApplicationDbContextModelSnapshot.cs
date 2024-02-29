@@ -83,13 +83,17 @@ namespace EE.API.Migrations
 
             modelBuilder.Entity("EE.API.Models.Product", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Brand")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Category")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Created")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
@@ -116,6 +120,9 @@ namespace EE.API.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("Updated")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

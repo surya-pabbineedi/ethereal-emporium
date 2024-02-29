@@ -1,0 +1,612 @@
+2024-02-29 14:58:09.122 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 14:58:09.172 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 14:58:09.192 +05:30 [DBG] Hosting starting
+2024-02-29 14:58:09.198 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 14:58:09.202 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 14:58:09.206 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 14:58:09.207 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 14:58:09.208 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 14:58:09.208 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 14:58:09.211 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 14:58:09.211 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 14:58:09.213 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 14:58:09.403 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 14:58:09.403 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 14:58:09.404 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 14:58:09.404 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 14:58:09.404 +05:30 [INF] Hosting environment: Development
+2024-02-29 14:58:09.404 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 14:58:09.404 +05:30 [DBG] Hosting started
+2024-02-29 14:58:09.560 +05:30 [DBG] Connection id "0HN1P12V5C927" received FIN.
+2024-02-29 14:58:09.562 +05:30 [DBG] Connection id "0HN1P12V5C927" accepted.
+2024-02-29 14:58:09.563 +05:30 [DBG] Connection id "0HN1P12V5C927" started.
+2024-02-29 14:58:09.567 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 14:58:09.574 +05:30 [DBG] Connection id "0HN1P12V5C927" stopped.
+2024-02-29 14:58:09.576 +05:30 [DBG] Connection id "0HN1P12V5C927" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 14:58:09.598 +05:30 [DBG] Connection id "0HN1P12V5C928" accepted.
+2024-02-29 14:58:09.598 +05:30 [DBG] Connection id "0HN1P12V5C928" started.
+2024-02-29 14:58:09.652 +05:30 [DBG] Connection 0HN1P12V5C928 established using the following protocol: "Tls12"
+2024-02-29 14:58:09.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 14:58:09.672 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 14:58:09.683 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 14:58:09.683 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:58:09.687 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:58:09.740 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 50.2540 ms
+2024-02-29 14:58:09.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 75.0525ms
+2024-02-29 14:58:09.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 14:58:09.872 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 14:58:09.872 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:58:09.873 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:58:09.937 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 63.3976 ms
+2024-02-29 14:58:09.937 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.5316ms
+2024-02-29 14:58:14.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 14:58:14.489 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 14:58:14.493 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 14:58:14.494 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:58:14.500 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:58:14.501 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:58:14.501 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:58:14.502 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:58:14.510 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 14:58:14.511 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 14:58:14.511 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 14:58:14.511 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 14:58:14.511 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 14:58:14.511 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 14:58:14.512 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 14:58:14.514 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 1.2105ms
+2024-02-29 14:58:14.515 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:58:14.515 +05:30 [ERR] HTTP GET /api/Product responded 500 in 14.1680 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-29 14:58:14.517 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 14:58:14.520 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 500 null text/plain; charset=utf-8 45.4637ms
+2024-02-29 14:58:33.414 +05:30 [INF] Application is shutting down...
+2024-02-29 14:58:33.415 +05:30 [DBG] Hosting stopping
+2024-02-29 14:58:33.420 +05:30 [DBG] Connection id "0HN1P12V5C928" is closing.
+2024-02-29 14:58:33.421 +05:30 [DBG] Connection id "0HN1P12V5C928" is closed. The last processed stream ID was 5.
+2024-02-29 14:58:33.422 +05:30 [DBG] Connection id "0HN1P12V5C928" received FIN.
+2024-02-29 14:58:33.422 +05:30 [DBG] Connection id "0HN1P12V5C928" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 14:58:33.422 +05:30 [DBG] The connection queue processing loop for 0HN1P12V5C928 completed.
+2024-02-29 14:58:33.423 +05:30 [DBG] Connection id "0HN1P12V5C928" stopped.
+2024-02-29 14:58:33.425 +05:30 [DBG] Hosting stopped
+2024-02-29 14:58:55.703 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 14:58:55.749 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 14:58:55.766 +05:30 [DBG] Hosting starting
+2024-02-29 14:58:55.771 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 14:58:55.775 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 14:58:55.779 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 14:58:55.780 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 14:58:55.781 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 14:58:55.781 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 14:58:55.783 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 14:58:55.784 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 14:58:55.786 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 14:58:55.936 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 14:58:55.936 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 14:58:55.936 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 14:58:55.936 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 14:58:55.936 +05:30 [INF] Hosting environment: Development
+2024-02-29 14:58:55.936 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 14:58:55.936 +05:30 [DBG] Hosting started
+2024-02-29 14:58:56.236 +05:30 [DBG] Connection id "0HN1P13D2GIRJ" received FIN.
+2024-02-29 14:58:56.241 +05:30 [DBG] Connection id "0HN1P13D2GIRJ" accepted.
+2024-02-29 14:58:56.242 +05:30 [DBG] Connection id "0HN1P13D2GIRJ" started.
+2024-02-29 14:58:56.248 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 14:58:56.257 +05:30 [DBG] Connection id "0HN1P13D2GIRJ" stopped.
+2024-02-29 14:58:56.260 +05:30 [DBG] Connection id "0HN1P13D2GIRJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 14:58:56.267 +05:30 [DBG] Connection id "0HN1P13D2GIRK" accepted.
+2024-02-29 14:58:56.268 +05:30 [DBG] Connection id "0HN1P13D2GIRK" started.
+2024-02-29 14:58:56.318 +05:30 [DBG] Connection 0HN1P13D2GIRK established using the following protocol: "Tls12"
+2024-02-29 14:58:56.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 14:58:56.337 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 14:58:56.346 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 14:58:56.346 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:58:56.350 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:58:56.400 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 47.0768 ms
+2024-02-29 14:58:56.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 67.0982ms
+2024-02-29 14:58:56.521 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 14:58:56.522 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 14:58:56.522 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:58:56.523 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:58:56.588 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 64.3818 ms
+2024-02-29 14:58:56.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.68ms
+2024-02-29 14:59:01.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 14:59:01.522 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 14:59:01.528 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 14:59:01.529 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:01.534 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:59:01.536 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:59:01.536 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:59:01.537 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:01.545 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 14:59:01.546 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 14:59:01.546 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 14:59:01.546 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 14:59:01.547 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 14:59:01.547 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 14:59:01.547 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 14:59:01.550 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 1.3809ms
+2024-02-29 14:59:01.550 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:01.550 +05:30 [ERR] HTTP GET /api/Product responded 500 in 15.2651 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-29 14:59:01.552 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 14:59:01.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 500 null text/plain; charset=utf-8 43.7715ms
+2024-02-29 14:59:25.630 +05:30 [INF] Application is shutting down...
+2024-02-29 14:59:25.631 +05:30 [DBG] Hosting stopping
+2024-02-29 14:59:25.635 +05:30 [DBG] Connection id "0HN1P13D2GIRK" is closing.
+2024-02-29 14:59:25.637 +05:30 [DBG] Connection id "0HN1P13D2GIRK" is closed. The last processed stream ID was 5.
+2024-02-29 14:59:25.638 +05:30 [DBG] Connection id "0HN1P13D2GIRK" received FIN.
+2024-02-29 14:59:25.638 +05:30 [DBG] Connection id "0HN1P13D2GIRK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 14:59:25.638 +05:30 [DBG] The connection queue processing loop for 0HN1P13D2GIRK completed.
+2024-02-29 14:59:25.638 +05:30 [DBG] Connection id "0HN1P13D2GIRK" stopped.
+2024-02-29 14:59:25.640 +05:30 [DBG] Hosting stopped
+2024-02-29 14:59:40.768 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 14:59:40.815 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 14:59:40.838 +05:30 [DBG] Hosting starting
+2024-02-29 14:59:40.843 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 14:59:40.847 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 14:59:40.850 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 14:59:40.851 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 14:59:40.853 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 14:59:40.853 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 14:59:40.855 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 14:59:40.855 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 14:59:40.859 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 14:59:41.040 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 14:59:41.040 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 14:59:41.040 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 14:59:41.040 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 14:59:41.041 +05:30 [INF] Hosting environment: Development
+2024-02-29 14:59:41.041 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 14:59:41.041 +05:30 [DBG] Hosting started
+2024-02-29 14:59:41.260 +05:30 [DBG] Connection id "0HN1P13QFSQNP" received FIN.
+2024-02-29 14:59:41.262 +05:30 [DBG] Connection id "0HN1P13QFSQNP" accepted.
+2024-02-29 14:59:41.263 +05:30 [DBG] Connection id "0HN1P13QFSQNP" started.
+2024-02-29 14:59:41.268 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 14:59:41.277 +05:30 [DBG] Connection id "0HN1P13QFSQNP" stopped.
+2024-02-29 14:59:41.279 +05:30 [DBG] Connection id "0HN1P13QFSQNP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 14:59:41.288 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" accepted.
+2024-02-29 14:59:41.288 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" started.
+2024-02-29 14:59:41.338 +05:30 [DBG] Connection 0HN1P13QFSQNQ established using the following protocol: "Tls12"
+2024-02-29 14:59:41.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 14:59:41.358 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 14:59:41.367 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 14:59:41.367 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:59:41.371 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:59:41.424 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 50.4443 ms
+2024-02-29 14:59:41.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 71.6389ms
+2024-02-29 14:59:41.547 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 14:59:41.549 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 14:59:41.549 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 14:59:41.549 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:59:41.611 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 61.4967 ms
+2024-02-29 14:59:41.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.071ms
+2024-02-29 14:59:45.934 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 14:59:45.944 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 14:59:45.946 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 14:59:45.946 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:45.948 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 14:59:45.948 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:59:45.948 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 14:59:45.948 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:45.956 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 14:59:45.956 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 14:59:45.956 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 14:59:45.957 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 14:59:45.957 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 14:59:45.957 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 14:59:45.957 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 14:59:45.960 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 1.2897ms
+2024-02-29 14:59:45.960 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 14:59:45.960 +05:30 [ERR] HTTP GET /api/Product responded 500 in 12.3155 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-29 14:59:45.962 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 14:59:45.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 500 null text/plain; charset=utf-8 31.2474ms
+2024-02-29 15:01:00.797 +05:30 [INF] Application is shutting down...
+2024-02-29 15:01:00.798 +05:30 [DBG] Hosting stopping
+2024-02-29 15:01:00.803 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" is closing.
+2024-02-29 15:01:00.805 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" is closed. The last processed stream ID was 5.
+2024-02-29 15:01:00.805 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" received FIN.
+2024-02-29 15:01:00.806 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:01:00.806 +05:30 [DBG] The connection queue processing loop for 0HN1P13QFSQNQ completed.
+2024-02-29 15:01:00.806 +05:30 [DBG] Connection id "0HN1P13QFSQNQ" stopped.
+2024-02-29 15:01:00.808 +05:30 [DBG] Hosting stopped
+2024-02-29 15:01:43.655 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 15:01:43.707 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 15:01:43.732 +05:30 [DBG] Hosting starting
+2024-02-29 15:01:43.738 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 15:01:43.741 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 15:01:43.745 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 15:01:43.746 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 15:01:43.748 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 15:01:43.748 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 15:01:43.751 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 15:01:43.751 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 15:01:43.755 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 15:01:43.970 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 15:01:43.970 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 15:01:43.970 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 15:01:43.971 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 15:01:43.971 +05:30 [INF] Hosting environment: Development
+2024-02-29 15:01:43.971 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 15:01:43.971 +05:30 [DBG] Hosting started
+2024-02-29 15:01:44.144 +05:30 [DBG] Connection id "0HN1P14V3Q663" received FIN.
+2024-02-29 15:01:44.147 +05:30 [DBG] Connection id "0HN1P14V3Q663" accepted.
+2024-02-29 15:01:44.147 +05:30 [DBG] Connection id "0HN1P14V3Q663" started.
+2024-02-29 15:01:44.152 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 15:01:44.163 +05:30 [DBG] Connection id "0HN1P14V3Q663" stopped.
+2024-02-29 15:01:44.166 +05:30 [DBG] Connection id "0HN1P14V3Q663" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:01:44.226 +05:30 [DBG] Connection id "0HN1P14V3Q664" accepted.
+2024-02-29 15:01:44.226 +05:30 [DBG] Connection id "0HN1P14V3Q664" started.
+2024-02-29 15:01:44.349 +05:30 [DBG] Connection 0HN1P14V3Q664 established using the following protocol: "Tls12"
+2024-02-29 15:01:44.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 15:01:44.399 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 15:01:44.411 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 15:01:44.412 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:01:44.417 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:01:44.484 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 64.5114 ms
+2024-02-29 15:01:44.492 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 95.8973ms
+2024-02-29 15:01:44.621 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 15:01:44.624 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 15:01:44.624 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:01:44.625 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:01:44.698 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 72.5345 ms
+2024-02-29 15:01:44.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.6649ms
+2024-02-29 15:01:48.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:01:48.973 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:01:48.985 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:01:48.986 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:01:48.989 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:01:48.991 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:01:48.991 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:01:48.991 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:01:49.001 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:01:49.001 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:01:49.001 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:01:49.001 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:01:49.002 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:01:49.002 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:01:49.003 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:01:49.005 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 1.6575ms
+2024-02-29 15:01:49.006 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:01:49.006 +05:30 [ERR] HTTP GET /api/Product responded 500 in 15.9248 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbSet`1[EE.API.Models.Product]' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-02-29 15:01:49.008 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.EntityFrameworkCore.DbSet`1[EE.API.Models.Product]' while attempting to activate 'EE.API.Services.Implementations.GenericRepository`1[EE.API.Models.Product]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot, Boolean throwOnConstraintViolation)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateOpenGeneric(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-02-29 15:01:49.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 500 null text/plain; charset=utf-8 50.2732ms
+2024-02-29 15:02:02.841 +05:30 [INF] Application is shutting down...
+2024-02-29 15:02:02.841 +05:30 [DBG] Hosting stopping
+2024-02-29 15:02:02.846 +05:30 [DBG] Connection id "0HN1P14V3Q664" is closing.
+2024-02-29 15:02:02.848 +05:30 [DBG] Connection id "0HN1P14V3Q664" is closed. The last processed stream ID was 5.
+2024-02-29 15:02:02.848 +05:30 [DBG] Connection id "0HN1P14V3Q664" received FIN.
+2024-02-29 15:02:02.848 +05:30 [DBG] Connection id "0HN1P14V3Q664" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:02:02.849 +05:30 [DBG] The connection queue processing loop for 0HN1P14V3Q664 completed.
+2024-02-29 15:02:02.849 +05:30 [DBG] Connection id "0HN1P14V3Q664" stopped.
+2024-02-29 15:02:02.851 +05:30 [DBG] Hosting stopped
+2024-02-29 15:05:51.676 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 15:05:51.730 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 15:05:51.757 +05:30 [DBG] Hosting starting
+2024-02-29 15:05:51.763 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 15:05:51.767 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 15:05:51.771 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 15:05:51.772 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 15:05:51.774 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 15:05:51.774 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 15:05:51.776 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 15:05:51.776 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 15:05:51.780 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 15:05:51.961 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 15:05:51.962 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 15:05:51.962 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 15:05:51.962 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 15:05:51.962 +05:30 [INF] Hosting environment: Development
+2024-02-29 15:05:51.962 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 15:05:51.962 +05:30 [DBG] Hosting started
+2024-02-29 15:05:52.135 +05:30 [DBG] Connection id "0HN1P1790QS2D" received FIN.
+2024-02-29 15:05:52.138 +05:30 [DBG] Connection id "0HN1P1790QS2D" accepted.
+2024-02-29 15:05:52.138 +05:30 [DBG] Connection id "0HN1P1790QS2D" started.
+2024-02-29 15:05:52.143 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 15:05:52.153 +05:30 [DBG] Connection id "0HN1P1790QS2D" stopped.
+2024-02-29 15:05:52.156 +05:30 [DBG] Connection id "0HN1P1790QS2D" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:05:52.178 +05:30 [DBG] Connection id "0HN1P1790QS2E" accepted.
+2024-02-29 15:05:52.178 +05:30 [DBG] Connection id "0HN1P1790QS2E" started.
+2024-02-29 15:05:52.249 +05:30 [DBG] Connection 0HN1P1790QS2E established using the following protocol: "Tls12"
+2024-02-29 15:05:52.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 15:05:52.284 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 15:05:52.297 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 15:05:52.297 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:05:52.304 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:05:52.371 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 64.4230 ms
+2024-02-29 15:05:52.378 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 95.3406ms
+2024-02-29 15:05:52.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 15:05:52.500 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 15:05:52.500 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:05:52.500 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:05:52.592 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 91.0562 ms
+2024-02-29 15:05:52.592 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.8051ms
+2024-02-29 15:05:57.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:05:57.464 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:05:57.465 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:05:57.466 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:05:57.467 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:05:57.467 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:05:57.468 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:05:57.468 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:05:57.475 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:05:57.476 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:05:57.476 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:05:57.476 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:05:57.477 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:05:57.477 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:05:57.480 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:05:57.548 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:05:57.897 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-02-29 15:05:57.897 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-02-29 15:05:58.075 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:05:58.075 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:05:58.078 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:05:58.094 +05:30 [DBG] Compiling query expression: 
+'DbSet<Product>()'
+2024-02-29 15:05:58.194 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Product>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Product.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.Brand (string), 1], [Property: Product.Category (string), 2], [Property: Product.Created (DateTime) Required, 3], [Property: Product.Description (string), 4], [Property: Product.DiscountPercentage (double?), 5], [Property: Product.Images (List<string>) Required Element type: string Required, 6], [Property: Product.Price (int?), 7], [Property: Product.Rating (double?), 8], [Property: Product.Stock (int?), 9], [Property: Product.Thumbnail (string) Required, 10], [Property: Product.Title (string), 11], [Property: Product.Updated (DateTime?), 12] }
+        SELECT p.Id, p.Brand, p.Category, p.Created, p.Description, p.DiscountPercentage, p.Images, p.Price, p.Rating, p.Stock, p.Thumbnail, p.Title, p.Updated
+        FROM Products AS p), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Product>, 
+    EE.API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-29 15:05:58.212 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:05:58.219 +05:30 [DBG] Created DbConnection. (5ms).
+2024-02-29 15:05:58.221 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:05:58.230 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:05:58.233 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:05:58.237 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-02-29 15:05:58.238 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-02-29 15:05:58.243 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:05:58.254 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:05:58.259 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:05:58.262 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 4ms reading results.
+2024-02-29 15:05:58.265 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:05:58.266 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (1ms).
+2024-02-29 15:05:58.269 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 188.791ms.
+2024-02-29 15:05:58.270 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:05:58.271 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:05:58.271 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:05:58.271 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:05:58.271 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:05:58.271 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:05:58.286 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 807.2415ms
+2024-02-29 15:05:58.287 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:05:58.287 +05:30 [INF] HTTP GET /api/Product responded 200 in 819.5570 ms
+2024-02-29 15:05:58.288 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:05:58.290 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:05:58.290 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:05:58.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 834.885ms
+2024-02-29 15:08:08.958 +05:30 [DBG] Connection id "0HN1P1790QS2E" is closing.
+2024-02-29 15:08:08.961 +05:30 [DBG] Connection id "0HN1P1790QS2E" is closed. The last processed stream ID was 5.
+2024-02-29 15:08:08.969 +05:30 [DBG] Connection id "0HN1P1790QS2E" received FIN.
+2024-02-29 15:08:08.969 +05:30 [DBG] The connection queue processing loop for 0HN1P1790QS2E completed.
+2024-02-29 15:08:08.971 +05:30 [DBG] Connection id "0HN1P1790QS2E" stopped.
+2024-02-29 15:08:08.973 +05:30 [DBG] Connection id "0HN1P1790QS2E" sending FIN because: "The Socket transport's send loop completed gracefully."

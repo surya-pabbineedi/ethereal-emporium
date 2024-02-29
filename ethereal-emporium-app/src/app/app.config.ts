@@ -8,7 +8,7 @@ import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { HTTP_INTERCEPTORS, provideHttpClient } from '@angular/common/http';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { jwtInterceptor } from './core/interceptors/jwt.interceptor';
+import { AuthenticationBearerInterceptor } from './core/interceptors/auth-bearer.interceptor';
 
 export const API_URL = new InjectionToken<string>('API_URL');
 
@@ -19,7 +19,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     {
       provide: API_URL,
-      useValue: 'https://localhost:7236',
+      useValue: 'https://localhost:7091',
     },
     // {
     //   provide: APP_INITIALIZER,
@@ -33,7 +33,7 @@ export const appConfig: ApplicationConfig = {
     {
       provide: HTTP_INTERCEPTORS,
       multi: true,
-      useValue: jwtInterceptor,
+      useValue: AuthenticationBearerInterceptor,
     },
   ],
 };
