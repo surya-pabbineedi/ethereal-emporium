@@ -19,7 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     AsyncPipe,
     RouterModule,
-    MatProgressBarModule,
+    MatProgressBarModule
   ],
   selector: 'ethereal-emporium-app-root',
   templateUrl: './app.component.html',

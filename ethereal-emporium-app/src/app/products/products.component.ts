@@ -15,6 +15,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { FormsModule } from '@angular/forms';
 import { ProductTableComponent } from './product-table/product-table.component';
 import { ProductSearchComponent } from './product-search/product-search.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'ethereal-emporium-app-products',
@@ -32,6 +33,7 @@ import { ProductSearchComponent } from './product-search/product-search.componen
     ProductTableComponent,
     ProductSearchComponent,
     ScrollingModule,
+    MatMenuModule,
   ],
   providers: [ProductStore],
   templateUrl: './products.component.html',
@@ -46,4 +48,8 @@ export default class ProductsComponent {
   readonly store = inject(ProductStore);
   productsView = model('grid');
   isGridView = computed(() => this.productsView() !== 'table');
+
+  handleBulkImport() {
+    this.store.bulkImport();
+  }
 }

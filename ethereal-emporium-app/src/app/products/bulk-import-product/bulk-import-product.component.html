@@ -1,0 +1,19 @@
+<div class="import-container">
+  <mat-dialog-content>
+    <textarea
+      matInput
+      cdkTextareaAutosize
+      #autosize="cdkTextareaAutosize"
+      cdkAutosizeMinRows="5"
+      [(ngModel)]="jsonInput"
+      cdkFocusInitial
+    ></textarea>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="center">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="accent" (click)="handleImport()">
+      Import
+    </button>
+  </mat-dialog-actions>
+</div>

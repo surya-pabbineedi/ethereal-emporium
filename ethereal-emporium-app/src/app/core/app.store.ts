@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
 import { computed, inject } from '@angular/core';
 import { EMPTY, catchError, tap } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NotificationHubService } from '../services/notification-hub.service';
 
 export type ProgressState = undefined | 'in-progress' | 'success' | 'error';
 
@@ -38,8 +39,10 @@ export const AppStore = signalStore(
   }),
   withHooks((store) => {
     const router = inject(Router);
+    const notificationService = inject(NotificationHubService);
     return {
       onInit: () => {
+        notificationService.init();
         const accessToken = sessionStorage.getItem('user_access_token');
 
         if (accessToken) {
@@ -50,7 +53,7 @@ export const AppStore = signalStore(
             loginState: 'success',
           });
 
-          router.navigate(['/home']);
+          router.navigate(['/products']);
         }
       },
     };
@@ -58,6 +61,8 @@ export const AppStore = signalStore(
   withMethods((store) => {
     const userService = inject(UserService);
     const router = inject(Router);
+    const notificationService = inject(NotificationHubService);
+
     return {
       setLoading(isLoading: boolean) {
         patchState(store, { isLoading });
@@ -73,6 +78,7 @@ export const AppStore = signalStore(
             });
 
             sessionStorage.setItem('user_access_token', response.accessToken);
+            notificationService.init();
             router.navigate(['/home']);
           }),
           catchError(() => {

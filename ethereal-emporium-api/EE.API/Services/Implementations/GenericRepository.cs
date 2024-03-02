@@ -5,16 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EE.API.Services.Implementations;
 
-public class GenericRepository<T>: IGenericRepository<T> where T : class
+public class GenericRepository<T>(ApplicationDbContext dbContext) : IGenericRepository<T>
+    where T : BaseEntity
 {
-    protected ApplicationDbContext DbContext;
-    internal readonly DbSet<T> DbSet;
-
-    public GenericRepository( ApplicationDbContext dbContext)
-    {
-        DbContext = dbContext;
-        DbSet = dbContext.Set<T>();
-    }
+    internal readonly DbSet<T> DbSet = dbContext.Set<T>();
 
     public async Task<IEnumerable<T>> GetAll()
     {
@@ -28,18 +22,41 @@ public class GenericRepository<T>: IGenericRepository<T> where T : class
 
     public async Task<T> Create(T entity)
     {
+        entity.Id = Guid.NewGuid();
+        entity.Created = DateTime.UtcNow;
         await DbSet.AddAsync(entity);
+        await dbContext.SaveChangesAsync();
+
         return entity;
     }
 
-    public async Task<T> Update(T entity)
+    public async Task<bool> Update(string id, T entity)
     {
-         DbSet.Update(entity);
-         return entity;
+        var savedEntity = await GetById(id);
+        if (savedEntity is null)
+        {
+            return false;
+        }
+        
+        entity.Updated = DateTime.UtcNow;
+        DbSet.Update(entity);
+        await dbContext.SaveChangesAsync();
+
+        return true;
     }
 
     public async Task<bool> Delete(string id)
     {
-        throw new NotImplementedException();
+        var entity = await DbSet.FindAsync(id);
+
+        if (entity is null)
+        {
+            return false;
+        }
+
+        DbSet.Remove(entity);
+        await dbContext.SaveChangesAsync();
+
+        return true;
     }
 }
