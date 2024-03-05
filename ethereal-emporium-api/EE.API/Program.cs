@@ -1,7 +1,10 @@
 using EE.API.Data;
+using EE.API.Hubs;
 using EE.API.Models;
 using EE.API.Services.Contracts;
 using EE.API.Services.Implementations;
+using Hangfire;
+using Hangfire.Storage.SQLite;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -19,9 +22,23 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddOptions();
+builder.Services.AddSignalR();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped(typeof(IContentService<>), typeof(ContentService<>));
 builder.Services.AddSingleton(Log.Logger);
+builder.Services.AddSingleton<UserConnectionsDb>();
+builder.Services.AddScoped<NotificationHub>();
+
+// hangfire config
+var hangFireConnectionString = builder.Configuration.GetConnectionString("Hangfire");
+builder.Services.AddHangfire(config => config
+    .SetDataCompatibilityLevel(CompatibilityLevel.Version_180)
+    .UseSimpleAssemblyNameTypeSerializer()
+    .UseSQLiteStorage(hangFireConnectionString));
+
+// hangfire server
+builder.Services.AddHangfireServer();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -65,14 +82,21 @@ builder.Host.UseSerilog((context, configuration) =>
 var app = builder.Build();
 app.UseCors(options =>
 {
-    options.AllowAnyOrigin()
+    options.WithOrigins("http://localhost:4200")
         .AllowAnyMethod()
-        .AllowAnyHeader();
+        .AllowAnyHeader().AllowCredentials();
 });
 
 app.UseSerilogRequestLogging();
+app.MapHub<NotificationHub>("/notifications");
 app.MapIdentityApi<AppUser>();
 app.MapControllers();
+
+app.UseHangfireDashboard();
+app.MapHangfireDashboard("/hangfire", new DashboardOptions()
+{
+    DashboardTitle = "Ethereal Emporium Services"
+});
 
 app.UseSwagger();
 app.UseSwaggerUI();

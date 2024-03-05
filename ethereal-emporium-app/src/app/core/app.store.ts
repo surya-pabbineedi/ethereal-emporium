@@ -8,9 +8,10 @@ import {
 } from '@ngrx/signals';
 import { UserService } from '../services/user.service';
 import { computed, inject } from '@angular/core';
-import { EMPTY, catchError, tap } from 'rxjs';
+import { EMPTY, catchError, map, tap } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NotificationHubService } from '../services/notification-hub.service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 export type ProgressState = undefined | 'in-progress' | 'success' | 'error';
 
@@ -31,9 +32,17 @@ export const AppStore = signalStore(
   { providedIn: 'root' },
   withState<AppState>(defaultAppState),
   withComputed(({ loginState }) => {
+    const activatedRoute = inject(ActivatedRoute);
     return {
       isLoginInProgress: computed(() => loginState() === 'in-progress'),
-      showAppToolbar: computed(() => loginState() === 'success'),
+      showAppToolbar: computed(() => {
+        return activatedRoute.url.pipe(
+          map(
+            (entry) =>
+              !entry.join('').endsWith('login') && loginState() === 'success'
+          )
+        );
+      }),
       isAuthenticated: computed(() => loginState() === 'success'),
     };
   }),

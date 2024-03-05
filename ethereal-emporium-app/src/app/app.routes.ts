@@ -1,8 +1,5 @@
 import { Route } from '@angular/router';
-import {
-  ProductResolver,
-  ProductsResolver,
-} from './resolvers/product-resolver';
+import { ProductResolver } from './resolvers/product-resolver';
 
 export const appRoutes: Route[] = [
   {
@@ -32,9 +29,9 @@ export const appRoutes: Route[] = [
     path: 'products',
     title: 'Products',
     loadComponent: () => import('./products/products.component'),
-    resolve: {
-      products: ProductsResolver,
-    },
+    // resolve: {
+    //   products: ProductsResolver,
+    // },
   },
   {
     path: 'products/:id',

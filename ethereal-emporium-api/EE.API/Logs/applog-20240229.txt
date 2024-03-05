@@ -610,3 +610,1312 @@ FROM "Products" AS "p"
 2024-02-29 15:08:08.969 +05:30 [DBG] The connection queue processing loop for 0HN1P1790QS2E completed.
 2024-02-29 15:08:08.971 +05:30 [DBG] Connection id "0HN1P1790QS2E" stopped.
 2024-02-29 15:08:08.973 +05:30 [DBG] Connection id "0HN1P1790QS2E" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:46:13.862 +05:30 [DBG] Connection id "0HN1P1790QS2F" accepted.
+2024-02-29 15:46:13.866 +05:30 [DBG] Connection id "0HN1P1790QS2F" started.
+2024-02-29 15:46:13.901 +05:30 [DBG] Connection 0HN1P1790QS2F established using the following protocol: "Tls12"
+2024-02-29 15:46:13.910 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7091/login - null null
+2024-02-29 15:46:13.910 +05:30 [DBG] 1 candidate(s) found for the request path '/login'
+2024-02-29 15:46:13.911 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-02-29 15:46:13.912 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:46:13.914 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 15:46:13.914 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:46:13.915 +05:30 [DBG] The request is a preflight request.
+2024-02-29 15:46:13.918 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7091/login - 204 null null 8.7081ms
+2024-02-29 15:46:13.920 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/login - application/json 67
+2024-02-29 15:46:13.920 +05:30 [DBG] 1 candidate(s) found for the request path '/login'
+2024-02-29 15:46:13.920 +05:30 [DBG] Request matched endpoint 'HTTP: POST /login'
+2024-02-29 15:46:13.920 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:46:13.920 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 15:46:13.921 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:46:13.921 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:46:13.921 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:46:13.922 +05:30 [INF] Executing endpoint 'HTTP: POST /login'
+2024-02-29 15:46:13.927 +05:30 [DBG] Connection id "0HN1P1790QS2F", Request id "0HN1P1790QS2F:00000003": started reading request body.
+2024-02-29 15:46:13.927 +05:30 [DBG] Connection id "0HN1P1790QS2F", Request id "0HN1P1790QS2F:00000003": done reading request body.
+2024-02-29 15:46:14.016 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:46:14.090 +05:30 [DBG] Compiling query expression: 
+'DbSet<AppUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2024-02-29 15:46:14.159 +05:30 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<AppUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<AppUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: AppUser.Id (string) Required PK AfterSave:Throw, 0], [Property: AppUser.AccessFailedCount (int) Required, 1], [Property: AppUser.ConcurrencyStamp (string) Concurrency, 2], [Property: AppUser.Email (string) MaxLength(256), 3], [Property: AppUser.EmailConfirmed (bool) Required, 4], [Property: AppUser.LockoutEnabled (bool) Required, 5], [Property: AppUser.LockoutEnd (DateTimeOffset?), 6], [Property: AppUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: AppUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: AppUser.PasswordHash (string), 9], [Property: AppUser.PhoneNumber (string), 10], [Property: AppUser.PhoneNumberConfirmed (bool) Required, 11], [Property: AppUser.SecurityStamp (string), 12], [Property: AppUser.TwoFactorEnabled (bool) Required, 13], [Property: AppUser.UserName (string) MaxLength(256), 14] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, AppUser>, 
+        EE.API.Data.ApplicationDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-02-29 15:46:14.178 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:46:14.178 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:46:14.178 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:46:14.179 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.181 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:46:14.182 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:46:14.184 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-02-29 15:46:14.186 +05:30 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 22)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-02-29 15:46:14.196 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 22)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."Email", "a"."EmailConfirmed", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-02-29 15:46:14.230 +05:30 [DBG] Context 'ApplicationDbContext' started tracking 'AppUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:46:14.255 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.255 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 58ms reading results.
+2024-02-29 15:46:14.255 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.256 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:46:14.340 +05:30 [DBG] Compiling query expression: 
+'DbSet<IdentityUserClaim<string>>()
+    .Where(uc => uc.UserId.Equals(__user_Id_0))
+    .Select(c => c.ToClaim())'
+2024-02-29 15:46:14.362 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: IdentityUserClaim<string>.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: IdentityUserClaim<string>.ClaimType (string), 1], [Property: IdentityUserClaim<string>.ClaimValue (string), 2], [Property: IdentityUserClaim<string>.UserId (string) Required FK Index, 3] }
+        SELECT a.Id, a.ClaimType, a.ClaimValue, a.UserId
+        FROM AspNetUserClaims AS a
+        WHERE a.UserId == @__user_Id_0), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    EE.API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-29 15:46:14.373 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:46:14.373 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.373 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:46:14.373 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:46:14.395 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (21ms).
+2024-02-29 15:46:14.395 +05:30 [DBG] Executing DbCommand [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2024-02-29 15:46:14.416 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2024-02-29 15:46:14.416 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.416 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:46:14.424 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:46:14.424 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:46:14.428 +05:30 [INF] AuthenticationScheme: Identity.Bearer signed in.
+2024-02-29 15:46:14.439 +05:30 [INF] Executed endpoint 'HTTP: POST /login'
+2024-02-29 15:46:14.439 +05:30 [INF] HTTP POST /login responded 200 in 517.9628 ms
+2024-02-29 15:46:14.440 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:46:14.440 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:46:14.443 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (3ms).
+2024-02-29 15:46:14.444 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/login - 200 null application/json; charset=utf-8 523.9441ms
+2024-02-29 15:48:25.708 +05:30 [DBG] Connection id "0HN1P1790QS2F" is closing.
+2024-02-29 15:48:25.711 +05:30 [DBG] Connection id "0HN1P1790QS2F" is closed. The last processed stream ID was 3.
+2024-02-29 15:48:25.714 +05:30 [DBG] The connection queue processing loop for 0HN1P1790QS2F completed.
+2024-02-29 15:48:25.715 +05:30 [DBG] Connection id "0HN1P1790QS2F" stopped.
+2024-02-29 15:48:25.717 +05:30 [DBG] Connection id "0HN1P1790QS2F" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:52:36.022 +05:30 [DBG] Connection id "0HN1P1790QS2G" accepted.
+2024-02-29 15:52:36.024 +05:30 [DBG] Connection id "0HN1P1790QS2G" started.
+2024-02-29 15:52:36.054 +05:30 [DBG] Connection 0HN1P1790QS2G established using the following protocol: "Tls12"
+2024-02-29 15:52:36.057 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:52:36.059 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:52:36.060 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:52:36.060 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:36.061 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:52:36.062 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 15:52:36.066 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:52:36.068 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:52:36.068 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:52:36.069 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:36.070 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:52:36.071 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:52:36.071 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:52:36.072 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:52:36.072 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:52:36.072 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:52:36.073 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:52:36.096 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:52:36.097 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:52:36.098 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:52:36.100 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:52:36.100 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:52:36.101 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:52:36.102 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:36.102 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:52:36.102 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:52:36.102 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:52:36.105 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:52:36.106 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:52:36.107 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:36.107 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:52:36.107 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:36.107 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:52:36.107 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.5925ms.
+2024-02-29 15:52:36.108 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:52:36.112 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:52:36.112 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:52:36.112 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:52:36.112 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:52:36.112 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:52:36.113 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 40.7227ms
+2024-02-29 15:52:36.114 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:36.114 +05:30 [INF] HTTP GET /api/Product responded 200 in 45.9573 ms
+2024-02-29 15:52:36.114 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:52:36.117 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:52:36.117 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:52:36.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 60.7037ms
+2024-02-29 15:52:44.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:52:44.483 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:52:44.483 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:52:44.483 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:44.483 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:52:44.483 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 15:52:44.483 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:52:44.484 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:52:44.484 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:52:44.484 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:44.484 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:52:44.485 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:52:44.485 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:52:44.485 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:52:44.485 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:52:44.485 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:52:44.486 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:52:44.493 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:52:44.493 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:52:44.495 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:52:44.495 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:52:44.495 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:52:44.495 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:52:44.496 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:44.497 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:52:44.497 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:52:44.497 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:52:44.497 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:52:44.498 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:52:44.498 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:44.498 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:52:44.502 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:52:44.503 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:52:44.540 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.57ms.
+2024-02-29 15:52:44.540 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:52:44.540 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:52:44.540 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:52:44.541 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:52:44.541 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:52:44.592 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:52:44.592 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 106.2738ms
+2024-02-29 15:52:44.592 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:52:44.592 +05:30 [INF] HTTP GET /api/Product responded 200 in 108.0306 ms
+2024-02-29 15:52:44.593 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:52:44.593 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:52:44.620 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (27ms).
+2024-02-29 15:52:44.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 138.5653ms
+2024-02-29 15:53:04.443 +05:30 [INF] Application is shutting down...
+2024-02-29 15:53:04.444 +05:30 [DBG] Hosting stopping
+2024-02-29 15:53:04.447 +05:30 [DBG] Connection id "0HN1P1790QS2G" is closing.
+2024-02-29 15:53:04.447 +05:30 [DBG] Connection id "0HN1P1790QS2G" is closed. The last processed stream ID was 3.
+2024-02-29 15:53:04.448 +05:30 [DBG] The connection queue processing loop for 0HN1P1790QS2G completed.
+2024-02-29 15:53:04.448 +05:30 [DBG] Connection id "0HN1P1790QS2G" stopped.
+2024-02-29 15:53:04.448 +05:30 [DBG] Connection id "0HN1P1790QS2G" received FIN.
+2024-02-29 15:53:04.448 +05:30 [DBG] Connection id "0HN1P1790QS2G" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:53:04.450 +05:30 [DBG] Hosting stopped
+2024-02-29 15:54:55.612 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 15:54:55.660 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 15:54:55.683 +05:30 [DBG] Hosting starting
+2024-02-29 15:54:55.688 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 15:54:55.692 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 15:54:55.696 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 15:54:55.697 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 15:54:55.698 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 15:54:55.698 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 15:54:55.700 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 15:54:55.700 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 15:54:55.704 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 15:54:55.933 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 15:54:55.933 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 15:54:55.933 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 15:54:55.933 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 15:54:55.933 +05:30 [INF] Hosting environment: Development
+2024-02-29 15:54:55.933 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 15:54:55.933 +05:30 [DBG] Hosting started
+2024-02-29 15:54:56.091 +05:30 [DBG] Connection id "0HN1P22MCIQK3" received FIN.
+2024-02-29 15:54:56.093 +05:30 [DBG] Connection id "0HN1P22MCIQK3" accepted.
+2024-02-29 15:54:56.093 +05:30 [DBG] Connection id "0HN1P22MCIQK3" started.
+2024-02-29 15:54:56.098 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 15:54:56.105 +05:30 [DBG] Connection id "0HN1P22MCIQK3" stopped.
+2024-02-29 15:54:56.109 +05:30 [DBG] Connection id "0HN1P22MCIQK3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:54:56.156 +05:30 [DBG] Connection id "0HN1P22MCIQK4" accepted.
+2024-02-29 15:54:56.156 +05:30 [DBG] Connection id "0HN1P22MCIQK4" started.
+2024-02-29 15:54:56.222 +05:30 [DBG] Connection 0HN1P22MCIQK4 established using the following protocol: "Tls12"
+2024-02-29 15:54:56.244 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 15:54:56.244 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 15:54:56.260 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 15:54:56.260 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:54:56.268 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:54:56.324 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 53.6948 ms
+2024-02-29 15:54:56.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 86.9144ms
+2024-02-29 15:54:56.332 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - null null
+2024-02-29 15:54:56.335 +05:30 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2024-02-29 15:54:56.335 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:54:56.337 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:54:56.354 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-29 15:54:56.354 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 16.8975 ms
+2024-02-29 15:54:56.354 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 22.0667ms
+2024-02-29 15:54:56.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 15:54:56.478 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 15:54:56.478 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:54:56.479 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:54:56.546 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 66.4409 ms
+2024-02-29 15:54:56.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.5721ms
+2024-02-29 15:55:06.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:55:06.125 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:06.127 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:06.128 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:06.128 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:06.128 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:06.129 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:06.129 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:06.136 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:06.137 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:06.137 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:06.137 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:06.138 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:06.138 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:06.138 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:06.211 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:55:06.533 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-02-29 15:55:06.533 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-02-29 15:55:06.716 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:06.716 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:06.719 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:06.736 +05:30 [DBG] Compiling query expression: 
+'DbSet<Product>()'
+2024-02-29 15:55:06.833 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Product>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Product.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.Brand (string), 1], [Property: Product.Category (string), 2], [Property: Product.Created (DateTime) Required, 3], [Property: Product.Description (string), 4], [Property: Product.DiscountPercentage (double?), 5], [Property: Product.Images (List<string>) Required Element type: string Required, 6], [Property: Product.Price (int?), 7], [Property: Product.Rating (double?), 8], [Property: Product.Stock (int?), 9], [Property: Product.Thumbnail (string) Required, 10], [Property: Product.Title (string), 11], [Property: Product.Updated (DateTime?), 12] }
+        SELECT p.Id, p.Brand, p.Category, p.Created, p.Description, p.DiscountPercentage, p.Images, p.Price, p.Rating, p.Stock, p.Thumbnail, p.Title, p.Updated
+        FROM Products AS p), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Product>, 
+    EE.API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-29 15:55:06.852 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:55:06.859 +05:30 [DBG] Created DbConnection. (5ms).
+2024-02-29 15:55:06.861 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:06.871 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:06.874 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:55:06.878 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-02-29 15:55:06.879 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-02-29 15:55:06.883 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:06.895 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:06.899 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:06.903 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 4ms reading results.
+2024-02-29 15:55:06.905 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:06.907 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (1ms).
+2024-02-29 15:55:06.909 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 187.832ms.
+2024-02-29 15:55:06.911 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:06.912 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:06.912 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:06.912 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:06.912 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:06.912 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:55:06.928 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 788.74ms
+2024-02-29 15:55:06.928 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:06.928 +05:30 [INF] HTTP GET /api/Product responded 200 in 799.9733 ms
+2024-02-29 15:55:06.929 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:06.931 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:06.932 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:06.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 819.3518ms
+2024-02-29 15:55:17.110 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 352
+2024-02-29 15:55:17.114 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:17.114 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:17.114 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:55:17.115 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:17.116 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 15:55:17.117 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:55:17.117 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:17.118 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:17.118 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:55:17.125 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:17.125 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:17.125 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:17.125 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:17.125 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:17.125 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:17.125 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:17.151 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:17.151 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:17.155 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 15:55:17.156 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 15:55:17.157 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 15:55:17.160 +05:30 [DBG] Connection id "0HN1P22MCIQK4", Request id "0HN1P22MCIQK4:00000009": started reading request body.
+2024-02-29 15:55:17.161 +05:30 [DBG] Connection id "0HN1P22MCIQK4", Request id "0HN1P22MCIQK4:00000009": done reading request body.
+2024-02-29 15:55:17.170 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'EE.API.Models.Product'
+2024-02-29 15:55:17.170 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:55:17.170 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:55:17.170 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 15:55:17.176 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:55:17.177 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Post (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:17.232 +05:30 [DBG] Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:55:17.233 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Post (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 55.3372ms.
+2024-02-29 15:55:17.233 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:17.233 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:17.233 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:17.233 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:17.233 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:17.234 +05:30 [INF] Executing OkObjectResult, writing value of type 'EE.API.Models.Product'.
+2024-02-29 15:55:17.238 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 112.947ms
+2024-02-29 15:55:17.238 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:55:17.238 +05:30 [INF] HTTP POST /api/Product responded 200 in 121.1177 ms
+2024-02-29 15:55:17.239 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:17.239 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 128.6903ms
+2024-02-29 15:55:29.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:55:29.238 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:29.238 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:29.238 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:29.239 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:29.239 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:29.239 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:29.239 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:29.239 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:29.240 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:29.240 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:29.248 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:29.248 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:29.248 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:29.250 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:29.260 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:29.260 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:29.260 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:29.261 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:55:29.261 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:55:29.261 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:29.261 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:29.261 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:55:29.261 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:29.261 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:29.261 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:29.262 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:29.262 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:29.262 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:55:29.262 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:29.262 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:29.262 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.8908ms.
+2024-02-29 15:55:29.262 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:29.263 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:29.263 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:29.263 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:29.263 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:29.263 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:55:29.263 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 12.9969ms
+2024-02-29 15:55:29.263 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:29.263 +05:30 [INF] HTTP GET /api/Product responded 200 in 24.1129 ms
+2024-02-29 15:55:29.263 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:29.263 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:29.263 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:29.263 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 30.795ms
+2024-02-29 15:55:30.000 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:55:30.004 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:30.005 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:30.006 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.006 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:30.006 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.006 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.007 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.007 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:30.007 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:30.008 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:30.008 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:30.008 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:30.009 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:30.009 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.011 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:30.011 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.012 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:30.014 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:55:30.014 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:55:30.014 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.014 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.014 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:55:30.014 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.014 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.015 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.015 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.015 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.015 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:55:30.015 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.015 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.015 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.2968ms.
+2024-02-29 15:55:30.015 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:30.015 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:30.015 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:30.015 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:30.015 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:30.015 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:55:30.016 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 6.7577ms
+2024-02-29 15:55:30.016 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.016 +05:30 [INF] HTTP GET /api/Product responded 200 in 9.7905 ms
+2024-02-29 15:55:30.016 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:30.016 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.016 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 16.3893ms
+2024-02-29 15:55:30.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:55:30.238 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:30.238 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:30.241 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.241 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:30.242 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.242 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.244 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.244 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:30.244 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:30.250 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:30.251 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:30.251 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:30.253 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:30.253 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.254 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:30.272 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.272 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:30.273 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:55:30.273 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:55:30.273 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.273 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.273 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:55:30.273 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.273 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.273 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.273 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.273 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.274 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:55:30.274 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.274 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.274 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.3942ms.
+2024-02-29 15:55:30.274 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:30.274 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:30.274 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:30.274 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:30.274 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:30.274 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:55:30.274 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 21.5277ms
+2024-02-29 15:55:30.274 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.274 +05:30 [INF] HTTP GET /api/Product responded 200 in 32.8090 ms
+2024-02-29 15:55:30.274 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:30.274 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.274 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 37.3862ms
+2024-02-29 15:55:30.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:55:30.460 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:55:30.460 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:55:30.460 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.460 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:55:30.460 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.460 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:55:30.460 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.460 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:55:30.460 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:55:30.460 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:55:30.460 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:55:30.460 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:55:30.460 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:55:30.461 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.461 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:55:30.461 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:55:30.461 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:55:30.461 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:55:30.461 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:55:30.461 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.462 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.462 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:55:30.462 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.462 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:55:30.462 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.463 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:55:30.463 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.463 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:55:30.463 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:55:30.463 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.463 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.1894ms.
+2024-02-29 15:55:30.464 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:55:30.464 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:55:30.464 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:55:30.464 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:55:30.464 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:55:30.464 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:55:30.464 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 3.2681ms
+2024-02-29 15:55:30.464 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:55:30.464 +05:30 [INF] HTTP GET /api/Product responded 200 in 3.8333 ms
+2024-02-29 15:55:30.464 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:55:30.464 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:55:30.464 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:55:30.464 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 4.4704ms
+2024-02-29 15:55:33.108 +05:30 [INF] Application is shutting down...
+2024-02-29 15:55:33.109 +05:30 [DBG] Hosting stopping
+2024-02-29 15:55:33.113 +05:30 [DBG] Connection id "0HN1P22MCIQK4" is closing.
+2024-02-29 15:55:33.114 +05:30 [DBG] Connection id "0HN1P22MCIQK4" is closed. The last processed stream ID was 17.
+2024-02-29 15:55:33.114 +05:30 [DBG] Connection id "0HN1P22MCIQK4" received FIN.
+2024-02-29 15:55:33.114 +05:30 [DBG] Connection id "0HN1P22MCIQK4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:55:33.115 +05:30 [DBG] The connection queue processing loop for 0HN1P22MCIQK4 completed.
+2024-02-29 15:55:33.115 +05:30 [DBG] Connection id "0HN1P22MCIQK4" stopped.
+2024-02-29 15:55:33.117 +05:30 [DBG] Hosting stopped
+2024-02-29 15:57:51.847 +05:30 [INF] User profile is available. Using '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-02-29 15:57:51.894 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-02-29 15:57:51.916 +05:30 [DBG] Hosting starting
+2024-02-29 15:57:51.921 +05:30 [DBG] Reading data from file '/Users/suryap.abbineedi/.aspnet/DataProtection-Keys/key-bf6d1069-6eef-47c7-be0e-b197f5a0b94e.xml'.
+2024-02-29 15:57:51.925 +05:30 [DBG] Found key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e}.
+2024-02-29 15:57:51.929 +05:30 [DBG] Considering key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} with expiration date 2024-05-22 03:54:53Z as default key.
+2024-02-29 15:57:51.930 +05:30 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-02-29 15:57:51.931 +05:30 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2024-02-29 15:57:51.931 +05:30 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2024-02-29 15:57:51.933 +05:30 [DBG] Using key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} as the default key.
+2024-02-29 15:57:51.933 +05:30 [DBG] Key ring with default key {bf6d1069-6eef-47c7-be0e-b197f5a0b94e} was loaded during application startup.
+2024-02-29 15:57:51.937 +05:30 [WRN] The WebRootPath was not found: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/wwwroot. Static files may be unavailable.
+2024-02-29 15:57:52.118 +05:30 [INF] Now listening on: https://localhost:7091
+2024-02-29 15:57:52.118 +05:30 [INF] Now listening on: http://localhost:5287
+2024-02-29 15:57:52.119 +05:30 [DBG] Loaded hosting startup assembly EE.API
+2024-02-29 15:57:52.119 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-29 15:57:52.119 +05:30 [INF] Hosting environment: Development
+2024-02-29 15:57:52.119 +05:30 [INF] Content root path: /Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API
+2024-02-29 15:57:52.119 +05:30 [DBG] Hosting started
+2024-02-29 15:57:52.340 +05:30 [DBG] Connection id "0HN1P24ATE1KT" received FIN.
+2024-02-29 15:57:52.343 +05:30 [DBG] Connection id "0HN1P24ATE1KT" accepted.
+2024-02-29 15:57:52.343 +05:30 [DBG] Connection id "0HN1P24ATE1KT" started.
+2024-02-29 15:57:52.347 +05:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-02-29 15:57:52.355 +05:30 [DBG] Connection id "0HN1P24ATE1KT" stopped.
+2024-02-29 15:57:52.359 +05:30 [DBG] Connection id "0HN1P24ATE1KT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 15:57:52.390 +05:30 [DBG] Connection id "0HN1P24ATE1KU" accepted.
+2024-02-29 15:57:52.390 +05:30 [DBG] Connection id "0HN1P24ATE1KU" started.
+2024-02-29 15:57:52.452 +05:30 [DBG] Connection 0HN1P24ATE1KU established using the following protocol: "Tls12"
+2024-02-29 15:57:52.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/index.html - null null
+2024-02-29 15:57:52.474 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-02-29 15:57:52.484 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-02-29 15:57:52.485 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:57:52.489 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:57:52.553 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 60.9635 ms
+2024-02-29 15:57:52.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/index.html - 200 null text/html;charset=utf-8 84.3754ms
+2024-02-29 15:57:52.717 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - null null
+2024-02-29 15:57:52.718 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-02-29 15:57:52.718 +05:30 [DBG] Request did not match any endpoints
+2024-02-29 15:57:52.719 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:57:52.796 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 77.2555 ms
+2024-02-29 15:57:52.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.4502ms
+2024-02-29 15:57:59.891 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 352
+2024-02-29 15:57:59.900 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:57:59.903 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:57:59.905 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:57:59.909 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:57:59.910 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 15:57:59.910 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:57:59.911 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:57:59.911 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:57:59.911 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:57:59.921 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:57:59.921 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:57:59.921 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:57:59.922 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:57:59.922 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:57:59.922 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:57:59.922 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:57:59.989 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:58:00.293 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-02-29 15:58:00.293 +05:30 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-02-29 15:58:00.466 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:58:00.466 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:58:00.470 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 15:58:00.471 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 15:58:00.471 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 15:58:00.485 +05:30 [DBG] Connection id "0HN1P24ATE1KU", Request id "0HN1P24ATE1KU:00000005": started reading request body.
+2024-02-29 15:58:00.486 +05:30 [DBG] Connection id "0HN1P24ATE1KU", Request id "0HN1P24ATE1KU:00000005": done reading request body.
+2024-02-29 15:58:00.494 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'EE.API.Models.Product'
+2024-02-29 15:58:00.494 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:58:00.494 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:58:00.494 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 15:58:00.500 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 15:58:00.504 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Post (EE.API) - Validation state: "Valid"
+2024-02-29 15:58:00.564 +05:30 [DBG] Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:58:00.566 +05:30 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2024-02-29 15:58:00.569 +05:30 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2024-02-29 15:58:00.584 +05:30 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2024-02-29 15:58:00.628 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:58:00.634 +05:30 [DBG] Created DbConnection. (5ms).
+2024-02-29 15:58:00.636 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:00.646 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:00.652 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:58:00.656 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-02-29 15:58:00.661 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-02-29 15:58:00.666 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (DbType = DateTime), @p4='?' (Size = 6), @p5='?' (DbType = Double), @p6='?' (Size = 10), @p7='?' (DbType = Int32), @p8='?' (DbType = Double), @p9='?' (DbType = Int32), @p10='?' (Size = 6), @p11='?' (Size = 6), @p12='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "Brand", "Category", "Created", "Description", "DiscountPercentage", "Images", "Price", "Rating", "Stock", "Thumbnail", "Title", "Updated")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2024-02-29 15:58:00.683 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 6), @p2='?' (Size = 6), @p3='?' (DbType = DateTime), @p4='?' (Size = 6), @p5='?' (DbType = Double), @p6='?' (Size = 10), @p7='?' (DbType = Int32), @p8='?' (DbType = Double), @p9='?' (DbType = Int32), @p10='?' (Size = 6), @p11='?' (Size = 6), @p12='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Id", "Brand", "Category", "Created", "Description", "DiscountPercentage", "Images", "Price", "Rating", "Stock", "Thumbnail", "Title", "Updated")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+2024-02-29 15:58:00.687 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:00.691 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 3ms reading results.
+2024-02-29 15:58:00.694 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:00.696 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (1ms).
+2024-02-29 15:58:00.703 +05:30 [DBG] An entity of type 'Product' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:58:00.704 +05:30 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2024-02-29 15:58:00.706 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Post (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 200.0307ms.
+2024-02-29 15:58:00.707 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:58:00.708 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:58:00.708 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:58:00.708 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:58:00.709 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:58:00.709 +05:30 [INF] Executing OkObjectResult, writing value of type 'EE.API.Models.Product'.
+2024-02-29 15:58:00.716 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 792.2324ms
+2024-02-29 15:58:00.716 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 15:58:00.716 +05:30 [INF] HTTP POST /api/Product responded 200 in 805.6345 ms
+2024-02-29 15:58:00.717 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:58:00.719 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:00.719 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:58:00.720 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 828.6005ms
+2024-02-29 15:58:06.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:58:06.321 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:58:06.321 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:58:06.322 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:06.322 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:58:06.323 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:58:06.323 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:58:06.325 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:06.336 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:58:06.336 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:58:06.336 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:58:06.337 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:58:06.337 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:58:06.338 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:58:06.338 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:58:06.363 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:58:06.363 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:58:06.363 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:58:06.379 +05:30 [DBG] Compiling query expression: 
+'DbSet<Product>()'
+2024-02-29 15:58:06.475 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Product>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Product.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Product.Brand (string), 1], [Property: Product.Category (string), 2], [Property: Product.Created (DateTime) Required, 3], [Property: Product.Description (string), 4], [Property: Product.DiscountPercentage (double?), 5], [Property: Product.Images (List<string>) Required Element type: string Required, 6], [Property: Product.Price (int?), 7], [Property: Product.Rating (double?), 8], [Property: Product.Stock (int?), 9], [Property: Product.Thumbnail (string) Required, 10], [Property: Product.Title (string), 11], [Property: Product.Updated (DateTime?), 12] }
+        SELECT p.Id, p.Brand, p.Category, p.Created, p.Description, p.DiscountPercentage, p.Images, p.Price, p.Rating, p.Stock, p.Thumbnail, p.Title, p.Updated
+        FROM Products AS p), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Product>, 
+    EE.API.Data.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-29 15:58:06.489 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:58:06.489 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:58:06.489 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:06.489 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:06.489 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:58:06.489 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:58:06.489 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:58:06.489 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:58:06.490 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:58:06.496 +05:30 [DBG] Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:58:06.497 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:06.497 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 7ms reading results.
+2024-02-29 15:58:06.497 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:06.498 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:58:06.498 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 134.5104ms.
+2024-02-29 15:58:06.498 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:58:06.498 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:58:06.498 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:58:06.498 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:58:06.498 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:58:06.498 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:58:06.499 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 160.4096ms
+2024-02-29 15:58:06.499 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:06.499 +05:30 [INF] HTTP GET /api/Product responded 200 in 176.2319 ms
+2024-02-29 15:58:06.499 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:58:06.499 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:06.499 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:58:06.499 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 179.6122ms
+2024-02-29 15:58:16.145 +05:30 [DBG] Connection id "0HN1P24ATE1KV" accepted.
+2024-02-29 15:58:16.146 +05:30 [DBG] Connection id "0HN1P24ATE1KV" started.
+2024-02-29 15:58:16.181 +05:30 [DBG] Connection 0HN1P24ATE1KV established using the following protocol: "Tls12"
+2024-02-29 15:58:16.181 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 15:58:16.182 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 15:58:16.182 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 15:58:16.182 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:16.182 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 15:58:16.182 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 15:58:16.182 +05:30 [INF] CORS policy execution successful.
+2024-02-29 15:58:16.182 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:58:16.182 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 15:58:16.182 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:16.182 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 15:58:16.182 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 15:58:16.182 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 15:58:16.182 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 15:58:16.182 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 15:58:16.183 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 15:58:16.183 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:58:16.188 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 15:58:16.188 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 15:58:16.188 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 15:58:16.192 +05:30 [DBG] Creating DbConnection.
+2024-02-29 15:58:16.192 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 15:58:16.192 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:16.192 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:16.192 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 15:58:16.193 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:58:16.193 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 15:58:16.193 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:58:16.193 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 15:58:16.193 +05:30 [DBG] Context 'ApplicationDbContext' started tracking 'Product' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-29 15:58:16.193 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:16.193 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 15:58:16.193 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 15:58:16.193 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:58:16.193 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.6652ms.
+2024-02-29 15:58:16.194 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 15:58:16.194 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 15:58:16.194 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 15:58:16.194 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 15:58:16.194 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 15:58:16.194 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 15:58:16.194 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 11.4638ms
+2024-02-29 15:58:16.194 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 15:58:16.194 +05:30 [INF] HTTP GET /api/Product responded 200 in 12.0723 ms
+2024-02-29 15:58:16.194 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 15:58:16.194 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 15:58:16.195 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 15:58:16.195 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 13.14ms
+2024-02-29 16:00:17.140 +05:30 [DBG] Connection id "0HN1P24ATE1KU" is closing.
+2024-02-29 16:00:17.144 +05:30 [DBG] Connection id "0HN1P24ATE1KU" is closed. The last processed stream ID was 7.
+2024-02-29 16:00:17.148 +05:30 [DBG] Connection id "0HN1P24ATE1KU" received FIN.
+2024-02-29 16:00:17.149 +05:30 [DBG] Connection id "0HN1P24ATE1KU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:00:17.151 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1KU completed.
+2024-02-29 16:00:17.152 +05:30 [DBG] Connection id "0HN1P24ATE1KU" stopped.
+2024-02-29 16:00:28.147 +05:30 [DBG] Connection id "0HN1P24ATE1KV" is closing.
+2024-02-29 16:00:28.149 +05:30 [DBG] Connection id "0HN1P24ATE1KV" is closed. The last processed stream ID was 1.
+2024-02-29 16:00:28.155 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1KV completed.
+2024-02-29 16:00:28.156 +05:30 [DBG] Connection id "0HN1P24ATE1KV" stopped.
+2024-02-29 16:00:28.156 +05:30 [DBG] Connection id "0HN1P24ATE1KV" received FIN.
+2024-02-29 16:00:28.156 +05:30 [DBG] Connection id "0HN1P24ATE1KV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:17:20.226 +05:30 [DBG] Connection id "0HN1P24ATE1L0" accepted.
+2024-02-29 16:17:20.229 +05:30 [DBG] Connection id "0HN1P24ATE1L0" started.
+2024-02-29 16:17:20.262 +05:30 [DBG] Connection 0HN1P24ATE1L0 established using the following protocol: "Tls12"
+2024-02-29 16:17:20.263 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1772
+2024-02-29 16:17:20.264 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:17:20.264 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:17:20.264 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:20.265 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:17:20.265 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:17:20.265 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:17:20.265 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:20.265 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:20.265 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:20.266 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:17:20.266 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:17:20.266 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:17:20.267 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:17:20.267 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:17:20.267 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:17:20.267 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:20.269 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:17:20.269 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:20.270 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:20.270 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:17:20.270 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:17:20.271 +05:30 [DBG] Connection id "0HN1P24ATE1L0", Request id "0HN1P24ATE1L0:00000001": started reading request body.
+2024-02-29 16:17:20.271 +05:30 [DBG] Connection id "0HN1P24ATE1L0", Request id "0HN1P24ATE1L0:00000001": done reading request body.
+2024-02-29 16:17:20.272 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:17:20.272 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:20.273 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:20.273 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:20.273 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:20.273 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:17:20.274 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:17:20.274 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:17:20.274 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:17:20.275 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:17:20.275 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:17:20.275 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:17:20.285 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 18.1177ms
+2024-02-29 16:17:20.285 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:20.285 +05:30 [INF] HTTP POST /api/Product responded 400 in 20.2389 ms
+2024-02-29 16:17:20.285 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:17:20.285 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 21.9917ms
+2024-02-29 16:17:21.276 +05:30 [DBG] Connection id "0HN1P24ATE1L0" received FIN.
+2024-02-29 16:17:21.276 +05:30 [DBG] Connection id "0HN1P24ATE1L0" is closed. The last processed stream ID was 1.
+2024-02-29 16:17:21.276 +05:30 [DBG] Connection id "0HN1P24ATE1L0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:17:21.277 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L0 completed.
+2024-02-29 16:17:21.277 +05:30 [DBG] Connection id "0HN1P24ATE1L0" stopped.
+2024-02-29 16:17:31.778 +05:30 [DBG] Connection id "0HN1P24ATE1L1" accepted.
+2024-02-29 16:17:31.784 +05:30 [DBG] Connection id "0HN1P24ATE1L1" started.
+2024-02-29 16:17:31.814 +05:30 [DBG] Connection 0HN1P24ATE1L1 established using the following protocol: "Tls12"
+2024-02-29 16:17:31.815 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1848
+2024-02-29 16:17:31.815 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:17:31.815 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:17:31.816 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:31.816 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:17:31.817 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:17:31.817 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:17:31.817 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:31.817 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:31.817 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:31.818 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:17:31.818 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:17:31.818 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:17:31.818 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:17:31.818 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:17:31.818 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:17:31.819 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:31.820 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:17:31.823 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:31.823 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:31.823 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:17:31.824 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:17:31.825 +05:30 [DBG] Connection id "0HN1P24ATE1L1", Request id "0HN1P24ATE1L1:00000001": started reading request body.
+2024-02-29 16:17:31.825 +05:30 [DBG] Connection id "0HN1P24ATE1L1", Request id "0HN1P24ATE1L1:00000001": done reading request body.
+2024-02-29 16:17:31.826 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:17:31.826 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:31.826 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:31.827 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:31.827 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:31.827 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:17:31.829 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:17:31.829 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:17:31.830 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:17:31.831 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:17:31.831 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:17:31.832 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:17:31.832 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 13.7052ms
+2024-02-29 16:17:31.832 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:31.833 +05:30 [INF] HTTP POST /api/Product responded 400 in 15.6059 ms
+2024-02-29 16:17:31.833 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:17:31.833 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 17.9803ms
+2024-02-29 16:17:36.275 +05:30 [DBG] Connection id "0HN1P24ATE1L1" received FIN.
+2024-02-29 16:17:36.276 +05:30 [DBG] Connection id "0HN1P24ATE1L1" is closed. The last processed stream ID was 1.
+2024-02-29 16:17:36.276 +05:30 [DBG] Connection id "0HN1P24ATE1L1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:17:36.277 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L1 completed.
+2024-02-29 16:17:36.277 +05:30 [DBG] Connection id "0HN1P24ATE1L1" stopped.
+2024-02-29 16:17:40.437 +05:30 [DBG] Connection id "0HN1P24ATE1L2" accepted.
+2024-02-29 16:17:40.437 +05:30 [DBG] Connection id "0HN1P24ATE1L2" started.
+2024-02-29 16:17:40.462 +05:30 [DBG] Connection 0HN1P24ATE1L2 established using the following protocol: "Tls12"
+2024-02-29 16:17:40.463 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1764
+2024-02-29 16:17:40.463 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:17:40.463 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:17:40.463 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:40.463 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:17:40.463 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:17:40.463 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:17:40.463 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:40.463 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:40.463 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:40.464 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:17:40.464 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:17:40.464 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:17:40.464 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:17:40.464 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:17:40.464 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:17:40.464 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:40.464 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:17:40.464 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:40.464 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:40.464 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:17:40.465 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:17:40.465 +05:30 [DBG] Connection id "0HN1P24ATE1L2", Request id "0HN1P24ATE1L2:00000001": started reading request body.
+2024-02-29 16:17:40.465 +05:30 [DBG] Connection id "0HN1P24ATE1L2", Request id "0HN1P24ATE1L2:00000001": done reading request body.
+2024-02-29 16:17:40.465 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:17:40.465 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:40.465 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:40.465 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:40.465 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:40.465 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:17:40.465 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:17:40.465 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:17:40.465 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:17:40.465 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:17:40.465 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:17:40.466 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:17:40.466 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 1.8597ms
+2024-02-29 16:17:40.466 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:40.466 +05:30 [INF] HTTP POST /api/Product responded 400 in 2.3534 ms
+2024-02-29 16:17:40.466 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:17:40.466 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 2.9672ms
+2024-02-29 16:17:41.275 +05:30 [DBG] Connection id "0HN1P24ATE1L2" received FIN.
+2024-02-29 16:17:41.275 +05:30 [DBG] Connection id "0HN1P24ATE1L2" is closed. The last processed stream ID was 1.
+2024-02-29 16:17:41.275 +05:30 [DBG] Connection id "0HN1P24ATE1L2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:17:41.276 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L2 completed.
+2024-02-29 16:17:41.277 +05:30 [DBG] Connection id "0HN1P24ATE1L2" stopped.
+2024-02-29 16:17:48.639 +05:30 [DBG] Connection id "0HN1P24ATE1L3" accepted.
+2024-02-29 16:17:48.641 +05:30 [DBG] Connection id "0HN1P24ATE1L3" started.
+2024-02-29 16:17:48.669 +05:30 [DBG] Connection 0HN1P24ATE1L3 established using the following protocol: "Tls12"
+2024-02-29 16:17:48.670 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1823
+2024-02-29 16:17:48.670 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:17:48.670 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:17:48.670 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:48.671 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:17:48.671 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:17:48.671 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:17:48.671 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:48.671 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:17:48.671 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:48.671 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:17:48.672 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:17:48.672 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:17:48.672 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:17:48.672 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:17:48.672 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:17:48.673 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:48.676 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:17:48.676 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:17:48.677 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:48.677 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:17:48.677 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:17:48.677 +05:30 [DBG] Connection id "0HN1P24ATE1L3", Request id "0HN1P24ATE1L3:00000001": started reading request body.
+2024-02-29 16:17:48.677 +05:30 [DBG] Connection id "0HN1P24ATE1L3", Request id "0HN1P24ATE1L3:00000001": done reading request body.
+2024-02-29 16:17:48.678 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:17:48.678 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:48.678 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:48.678 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:17:48.679 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:17:48.679 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:17:48.679 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:17:48.679 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:17:48.679 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:17:48.679 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:17:48.680 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:17:48.680 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:17:48.680 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 6.4129ms
+2024-02-29 16:17:48.680 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:17:48.680 +05:30 [INF] HTTP POST /api/Product responded 400 in 8.8758 ms
+2024-02-29 16:17:48.680 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:17:48.680 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 10.0001ms
+2024-02-29 16:17:51.280 +05:30 [DBG] Connection id "0HN1P24ATE1L3" received FIN.
+2024-02-29 16:17:51.280 +05:30 [DBG] Connection id "0HN1P24ATE1L3" is closed. The last processed stream ID was 1.
+2024-02-29 16:17:51.280 +05:30 [DBG] Connection id "0HN1P24ATE1L3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:17:51.280 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L3 completed.
+2024-02-29 16:17:51.281 +05:30 [DBG] Connection id "0HN1P24ATE1L3" stopped.
+2024-02-29 16:18:00.753 +05:30 [DBG] Connection id "0HN1P24ATE1L4" accepted.
+2024-02-29 16:18:00.753 +05:30 [DBG] Connection id "0HN1P24ATE1L4" started.
+2024-02-29 16:18:00.780 +05:30 [DBG] Connection 0HN1P24ATE1L4 established using the following protocol: "Tls12"
+2024-02-29 16:18:00.781 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1790
+2024-02-29 16:18:00.781 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:18:00.781 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:18:00.781 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:00.781 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:18:00.781 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:18:00.781 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:18:00.782 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:00.782 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:00.782 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:00.785 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:18:00.785 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:18:00.785 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:18:00.786 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:18:00.786 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:18:00.786 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:18:00.786 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:00.787 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:18:00.788 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:00.788 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:00.788 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:18:00.788 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:18:00.788 +05:30 [DBG] Connection id "0HN1P24ATE1L4", Request id "0HN1P24ATE1L4:00000001": started reading request body.
+2024-02-29 16:18:00.788 +05:30 [DBG] Connection id "0HN1P24ATE1L4", Request id "0HN1P24ATE1L4:00000001": done reading request body.
+2024-02-29 16:18:00.789 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:18:00.789 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:00.789 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:00.789 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:00.790 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:00.790 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:18:00.790 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:18:00.790 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:18:00.790 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:18:00.790 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:18:00.790 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:18:00.790 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:18:00.790 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 3.9488ms
+2024-02-29 16:18:00.790 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:00.790 +05:30 [INF] HTTP POST /api/Product responded 400 in 8.6309 ms
+2024-02-29 16:18:00.790 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:18:00.790 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 9.8137ms
+2024-02-29 16:18:01.280 +05:30 [DBG] Connection id "0HN1P24ATE1L4" received FIN.
+2024-02-29 16:18:01.280 +05:30 [DBG] Connection id "0HN1P24ATE1L4" is closed. The last processed stream ID was 1.
+2024-02-29 16:18:01.280 +05:30 [DBG] Connection id "0HN1P24ATE1L4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:18:01.280 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L4 completed.
+2024-02-29 16:18:01.280 +05:30 [DBG] Connection id "0HN1P24ATE1L4" stopped.
+2024-02-29 16:18:11.925 +05:30 [DBG] Connection id "0HN1P24ATE1L5" accepted.
+2024-02-29 16:18:11.928 +05:30 [DBG] Connection id "0HN1P24ATE1L5" started.
+2024-02-29 16:18:11.957 +05:30 [DBG] Connection 0HN1P24ATE1L5 established using the following protocol: "Tls12"
+2024-02-29 16:18:11.959 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1828
+2024-02-29 16:18:11.960 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:18:11.960 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:18:11.960 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:11.960 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:18:11.960 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:18:11.960 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:18:11.961 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:11.961 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:11.961 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:11.961 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:18:11.961 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:18:11.961 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:18:11.961 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:18:11.962 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:18:11.962 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:18:11.962 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:11.963 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:18:11.963 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:11.963 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:11.964 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:18:11.964 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:18:11.964 +05:30 [DBG] Connection id "0HN1P24ATE1L5", Request id "0HN1P24ATE1L5:00000001": started reading request body.
+2024-02-29 16:18:11.964 +05:30 [DBG] Connection id "0HN1P24ATE1L5", Request id "0HN1P24ATE1L5:00000001": done reading request body.
+2024-02-29 16:18:11.964 +05:30 [DBG] JSON input formatter threw an exception: 'i' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 1 | BytePositionInLine: 6.
+2024-02-29 16:18:11.965 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:11.965 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:11.965 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:11.965 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:11.965 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:18:11.965 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:18:11.966 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:18:11.967 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:18:11.967 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:18:11.968 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:18:11.968 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:18:11.968 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 6.0787ms
+2024-02-29 16:18:11.968 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:11.968 +05:30 [INF] HTTP POST /api/Product responded 400 in 7.8068 ms
+2024-02-29 16:18:11.969 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:18:11.969 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 9.346ms
+2024-02-29 16:18:16.282 +05:30 [DBG] Connection id "0HN1P24ATE1L5" received FIN.
+2024-02-29 16:18:16.282 +05:30 [DBG] Connection id "0HN1P24ATE1L5" is closed. The last processed stream ID was 1.
+2024-02-29 16:18:16.282 +05:30 [DBG] Connection id "0HN1P24ATE1L5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:18:16.282 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L5 completed.
+2024-02-29 16:18:16.283 +05:30 [DBG] Connection id "0HN1P24ATE1L5" stopped.
+2024-02-29 16:18:18.569 +05:30 [DBG] Connection id "0HN1P24ATE1L6" accepted.
+2024-02-29 16:18:18.570 +05:30 [DBG] Connection id "0HN1P24ATE1L6" started.
+2024-02-29 16:18:18.609 +05:30 [DBG] Connection 0HN1P24ATE1L6 established using the following protocol: "Tls12"
+2024-02-29 16:18:18.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 16:18:18.612 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:18:18.638 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:18:18.638 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:18.638 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:18:18.638 +05:30 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-02-29 16:18:18.640 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:18:18.640 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:18.641 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:18.641 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:18.641 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:18:18.645 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:18:18.645 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:18:18.645 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:18:18.645 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:18:18.646 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:18:18.646 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:18.647 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:18:18.651 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:18.652 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 16:18:18.654 +05:30 [DBG] Creating DbConnection.
+2024-02-29 16:18:18.655 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 16:18:18.655 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 16:18:18.656 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:18.657 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 16:18:18.657 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 16:18:18.657 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 16:18:18.658 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 16:18:18.661 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 16:18:18.661 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:18.661 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 16:18:18.661 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:18.662 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 16:18:18.662 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.0115ms.
+2024-02-29 16:18:18.662 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:18:18.662 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:18:18.662 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 16:18:18.662 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 16:18:18.662 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 16:18:18.663 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 16:18:18.663 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 16.9932ms
+2024-02-29 16:18:18.663 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:18.663 +05:30 [INF] HTTP GET /api/Product responded 200 in 22.9830 ms
+2024-02-29 16:18:18.663 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:18:18.663 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 16:18:18.663 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 16:18:18.664 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 52.6705ms
+2024-02-29 16:18:21.288 +05:30 [DBG] Connection id "0HN1P24ATE1L6" received FIN.
+2024-02-29 16:18:21.288 +05:30 [DBG] Connection id "0HN1P24ATE1L6" is closed. The last processed stream ID was 1.
+2024-02-29 16:18:21.288 +05:30 [DBG] Connection id "0HN1P24ATE1L6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:18:21.289 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L6 completed.
+2024-02-29 16:18:21.294 +05:30 [DBG] Connection id "0HN1P24ATE1L6" stopped.
+2024-02-29 16:18:34.943 +05:30 [DBG] Connection id "0HN1P24ATE1L7" accepted.
+2024-02-29 16:18:34.948 +05:30 [DBG] Connection id "0HN1P24ATE1L7" started.
+2024-02-29 16:18:34.981 +05:30 [DBG] Connection 0HN1P24ATE1L7 established using the following protocol: "Tls12"
+2024-02-29 16:18:34.984 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7091/api/Product - null null
+2024-02-29 16:18:34.985 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:18:34.985 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Get (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:18:34.985 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:34.986 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:18:34.986 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:34.987 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:34.987 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:34.987 +05:30 [INF] Route matched with {action = "Get", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:18:34.988 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:18:34.988 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:18:34.988 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:18:34.988 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:18:34.988 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:18:34.989 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:34.993 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:18:34.993 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:34.994 +05:30 [INF] Executing action method EE.API.Controllers.ProductController.Get (EE.API) - Validation state: "Valid"
+2024-02-29 16:18:34.994 +05:30 [DBG] Creating DbConnection.
+2024-02-29 16:18:34.995 +05:30 [DBG] Created DbConnection. (0ms).
+2024-02-29 16:18:34.995 +05:30 [DBG] Opening connection to database 'main' on server 'ee_database.db'.
+2024-02-29 16:18:34.995 +05:30 [DBG] Opened connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:34.996 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-02-29 16:18:34.997 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 16:18:34.997 +05:30 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-29 16:18:34.997 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 16:18:34.997 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Brand", "p"."Category", "p"."Created", "p"."Description", "p"."DiscountPercentage", "p"."Images", "p"."Price", "p"."Rating", "p"."Stock", "p"."Thumbnail", "p"."Title", "p"."Updated"
+FROM "Products" AS "p"
+2024-02-29 16:18:34.997 +05:30 [DBG] Closing data reader to 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:34.997 +05:30 [DBG] A data reader for 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db' is being disposed after spending 0ms reading results.
+2024-02-29 16:18:34.997 +05:30 [DBG] Closing connection to database 'main' on server '/Users/suryap.abbineedi/Work/ethereal-emporium/ethereal-emporium-api/EE.API/ee_database.db'.
+2024-02-29 16:18:34.997 +05:30 [DBG] Closed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 16:18:34.998 +05:30 [INF] Executed action method EE.API.Controllers.ProductController.Get (EE.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.5096ms.
+2024-02-29 16:18:34.998 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:18:34.998 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:18:34.998 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-29 16:18:34.998 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-29 16:18:34.998 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-29 16:18:34.998 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EE.API.Models.Product, EE.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-29 16:18:34.998 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Get (EE.API) in 9.7875ms
+2024-02-29 16:18:34.998 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Get (EE.API)'
+2024-02-29 16:18:34.998 +05:30 [INF] HTTP GET /api/Product responded 200 in 12.4427 ms
+2024-02-29 16:18:34.998 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:18:34.999 +05:30 [DBG] Disposing connection to database 'main' on server 'ee_database.db'.
+2024-02-29 16:18:34.999 +05:30 [DBG] Disposed connection to database 'main' on server 'ee_database.db' (0ms).
+2024-02-29 16:18:34.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7091/api/Product - 200 null application/json; charset=utf-8 14.9591ms
+2024-02-29 16:18:36.285 +05:30 [DBG] Connection id "0HN1P24ATE1L7" received FIN.
+2024-02-29 16:18:36.286 +05:30 [DBG] Connection id "0HN1P24ATE1L7" is closed. The last processed stream ID was 1.
+2024-02-29 16:18:36.286 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L7 completed.
+2024-02-29 16:18:36.286 +05:30 [DBG] Connection id "0HN1P24ATE1L7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:18:36.289 +05:30 [DBG] Connection id "0HN1P24ATE1L7" stopped.
+2024-02-29 16:18:42.353 +05:30 [DBG] Connection id "0HN1P24ATE1L8" accepted.
+2024-02-29 16:18:42.353 +05:30 [DBG] Connection id "0HN1P24ATE1L8" started.
+2024-02-29 16:18:42.378 +05:30 [DBG] Connection 0HN1P24ATE1L8 established using the following protocol: "Tls12"
+2024-02-29 16:18:42.379 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7091/api/Product - application/json 1818
+2024-02-29 16:18:42.380 +05:30 [DBG] 1 candidate(s) found for the request path '/api/Product'
+2024-02-29 16:18:42.380 +05:30 [DBG] Endpoint 'EE.API.Controllers.ProductController.Post (EE.API)' with route pattern 'api/Product' is valid for the request path '/api/Product'
+2024-02-29 16:18:42.381 +05:30 [DBG] Request matched endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:42.381 +05:30 [DBG] AuthenticationScheme: Identity.Bearer was not authenticated.
+2024-02-29 16:18:42.381 +05:30 [DBG] The request has an origin header: 'https://localhost:7091'.
+2024-02-29 16:18:42.382 +05:30 [INF] CORS policy execution successful.
+2024-02-29 16:18:42.383 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:42.383 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-02-29 16:18:42.383 +05:30 [INF] Executing endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:42.383 +05:30 [INF] Route matched with {action = "Post", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EE.API.Models.Product) on controller EE.API.Controllers.ProductController (EE.API).
+2024-02-29 16:18:42.384 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-02-29 16:18:42.384 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-02-29 16:18:42.384 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-02-29 16:18:42.384 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-02-29 16:18:42.384 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-02-29 16:18:42.384 +05:30 [DBG] Executing controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:42.385 +05:30 [DBG] Entity Framework Core 8.0.2 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:8.0.2' with options: None
+2024-02-29 16:18:42.385 +05:30 [DBG] Executed controller factory for controller EE.API.Controllers.ProductController (EE.API)
+2024-02-29 16:18:42.385 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:42.385 +05:30 [DBG] Attempting to bind parameter 'product' of type 'EE.API.Models.Product' using the name '' in request data ...
+2024-02-29 16:18:42.385 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-29 16:18:42.385 +05:30 [DBG] Connection id "0HN1P24ATE1L8", Request id "0HN1P24ATE1L8:00000001": started reading request body.
+2024-02-29 16:18:42.385 +05:30 [DBG] Connection id "0HN1P24ATE1L8", Request id "0HN1P24ATE1L8:00000001": done reading request body.
+2024-02-29 16:18:42.386 +05:30 [DBG] JSON input formatter threw an exception: 'f' is an invalid start of a property name. Expected a '"'. Path: $ | LineNumber: 2 | BytePositionInLine: 6.
+2024-02-29 16:18:42.386 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:42.386 +05:30 [DBG] Done attempting to bind parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:42.386 +05:30 [DBG] Attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product' ...
+2024-02-29 16:18:42.386 +05:30 [DBG] Done attempting to validate the bound parameter 'product' of type 'EE.API.Models.Product'.
+2024-02-29 16:18:42.386 +05:30 [DBG] The request has model state errors, returning an error response.
+2024-02-29 16:18:42.386 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2024-02-29 16:18:42.386 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-02-29 16:18:42.386 +05:30 [DBG] No information found on request to perform content negotiation.
+2024-02-29 16:18:42.386 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2024-02-29 16:18:42.386 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2024-02-29 16:18:42.386 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-02-29 16:18:42.387 +05:30 [INF] Executed action EE.API.Controllers.ProductController.Post (EE.API) in 2.1135ms
+2024-02-29 16:18:42.387 +05:30 [INF] Executed endpoint 'EE.API.Controllers.ProductController.Post (EE.API)'
+2024-02-29 16:18:42.387 +05:30 [INF] HTTP POST /api/Product responded 400 in 3.7220 ms
+2024-02-29 16:18:42.387 +05:30 [DBG] 'ApplicationDbContext' disposed.
+2024-02-29 16:18:42.387 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7091/api/Product - 400 null application/problem+json; charset=utf-8 7.3963ms
+2024-02-29 16:18:46.286 +05:30 [DBG] Connection id "0HN1P24ATE1L8" received FIN.
+2024-02-29 16:18:46.287 +05:30 [DBG] Connection id "0HN1P24ATE1L8" is closed. The last processed stream ID was 1.
+2024-02-29 16:18:46.287 +05:30 [DBG] Connection id "0HN1P24ATE1L8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-29 16:18:46.287 +05:30 [DBG] The connection queue processing loop for 0HN1P24ATE1L8 completed.
+2024-02-29 16:18:46.287 +05:30 [DBG] Connection id "0HN1P24ATE1L8" stopped.
+2024-02-29 16:19:14.868 +05:30 [INF] Application is shutting down...
+2024-02-29 16:19:14.869 +05:30 [DBG] Hosting stopping
+2024-02-29 16:19:14.875 +05:30 [DBG] Hosting stopped

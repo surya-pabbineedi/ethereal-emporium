@@ -24,13 +24,13 @@ export class ProductService {
   getProduct$(id: string | null): Observable<Product> {
     if (!id) throw new Error('No product id');
 
-    return this.http.get<Product>(`${this.apiURL}/api/Product${id}`);
+    return this.http.get<Product>(`${this.apiURL}/api/Product/${id}`);
   }
 
   searchProducts(incomingQuery: string): Observable<Product[]> {
     return this.http
       .get<ProductResponse>(
-        `https://dummyjson.com/products/search?q=${incomingQuery}`
+        `${this.apiURL}/api/Product/search?q=${incomingQuery}`
       )
       .pipe(map((response: ProductResponse) => response.products));
   }

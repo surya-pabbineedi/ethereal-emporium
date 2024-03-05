@@ -1,6 +1,6 @@
-namespace EE.Services.Contracts;
+namespace EE.API.Services.Contracts;
 
-public interface IContentService
+public interface IContentService<T> where T : class
 {
-    Task Import();
+    Task<string> ImportAsync(IEnumerable<T> entities);
 }

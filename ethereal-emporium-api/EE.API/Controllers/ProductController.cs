@@ -32,14 +32,16 @@ namespace EE.API.Controllers
 
         // POST api/<Product>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Post([FromBody] Product product)
         {
+            return Ok(await productService.Create(product));
         }
 
         // PUT api/<Product>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Put(string id, [FromBody] Product product)
         {
+            return Ok(await productService.Update(id, product));
         }
 
         // DELETE api/<Product>/5
