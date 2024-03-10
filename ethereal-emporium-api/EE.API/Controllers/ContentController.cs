@@ -24,7 +24,7 @@ namespace EE.API.Controllers
                 }
 
                 return Ok(BackgroundJob.Enqueue<IContentService<Product>>(service =>
-                    service.ImportAsync(bulkImport.Products)));
+                    service.ImportAsync(bulkImport.Products, null)));
             }
 
             return NoContent();

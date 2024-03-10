@@ -1,0 +1,32 @@
+ethereal-emporium-app-ai-assistant-dialog {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+
+    height: 40vh;
+
+    .ai-assistant-container {
+        position: relative;
+        width: 400px;
+        height: 100%;
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        height: 40vh;
+        width: 400px;
+
+        border: 1px solid cornflowerblue;
+
+        &__content {
+            background: whitesmoke;
+            height: 100%;
+        }
+
+        &__prompt {
+            width: 100%;
+            border-top: 1px solid coral;
+        }
+    }
+}

@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { AiAssistantComponent } from './ai-assistant/ai-assistant.component';
 
 @Component({
   standalone: true,
@@ -19,7 +20,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     AsyncPipe,
     RouterModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    AiAssistantComponent,
   ],
   selector: 'ethereal-emporium-app-root',
   templateUrl: './app.component.html',

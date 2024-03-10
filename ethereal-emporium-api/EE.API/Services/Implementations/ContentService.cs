@@ -1,21 +1,25 @@
+using System.Diagnostics;
 using EE.API.Data;
 using EE.API.Hubs;
 using EE.API.Services.Contracts;
+using Hangfire.Server;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace EE.API.Services.Implementations;
 
-public class ContentService<T>(ApplicationDbContext dbContext, NotificationHub notificationHub) : IContentService<T>
+public class ContentService<T>(ApplicationDbContext dbContext, IHubContext<NotificationHub> hubContext)
+    : IContentService<T>
     where T : class
 {
     private readonly DbSet<T> _dbSet = dbContext.Set<T>();
 
-    public async Task<string> ImportAsync(IEnumerable<T> entities)
+    public async Task<string> ImportAsync(IEnumerable<T> entities, PerformContext? context)
     {
         try
         {
             Console.WriteLine("Import of products has been initiated");
-            
+
             try
             {
                 await _dbSet.AddRangeAsync(entities);
@@ -26,8 +30,10 @@ public class ContentService<T>(ApplicationDbContext dbContext, NotificationHub n
                 Console.WriteLine(e);
             }
 
-            await notificationHub.NotifyBulkImport();
-
+            await hubContext.Clients.All.SendAsync("ImportSuccess", new
+            {
+                jobId = context?.BackgroundJob.Id, entityType = "products"
+            });
             return string.Empty;
         }
         catch (Exception e)
@@ -35,7 +41,7 @@ public class ContentService<T>(ApplicationDbContext dbContext, NotificationHub n
             Console.WriteLine(e);
             throw;
         }
-        
+
         return string.Empty;
     }
 }

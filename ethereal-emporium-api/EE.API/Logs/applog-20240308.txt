@@ -1,0 +1,384 @@
+2024-03-08 00:23:24.352 +05:30 [DBG] Server suryas-macbook-pro:70070:8d4cbb92 heartbeat successfully sent
+2024-03-08 00:38:54.834 +05:30 [DBG] Server suryas-macbook-pro:70070:8d4cbb92 heartbeat successfully sent
+2024-03-08 00:54:24.760 +05:30 [DBG] Server suryas-macbook-pro:70070:8d4cbb92 heartbeat successfully sent
+2024-03-08 01:09:54.689 +05:30 [DBG] Server suryas-macbook-pro:70070:8d4cbb92 heartbeat successfully sent
+2024-03-08 01:25:24.612 +05:30 [DBG] Server suryas-macbook-pro:70070:8d4cbb92 heartbeat successfully sent
+2024-03-08 01:40:54.924 +05:30 [INF] 1 servers were removed due to timeout
+2024-03-08 01:40:54.934 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 01:40:55.198 +05:30 [WRN] Server suryas-macbook-pro:70070:8d4cbb92 was considered dead by other servers, restarting...
+2024-03-08 01:40:55.199 +05:30 [INF] Server suryas-macbook-pro:70070:8d4cbb92 caught restart signal...
+2024-03-08 01:40:55.199 +05:30 [DBG] Execution loop ServerHeartbeatProcess:6bc7dec7 stopped in 0.2587 ms
+2024-03-08 01:40:55.199 +05:30 [DBG] Execution loop CountersAggregator:f38aae09 stopped in 0.1901 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:09103ff8 stopped in 0.5447 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:8bddb392 stopped in 0.7633 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:b703c74e stopped in 0.8476 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:04966e4d stopped in 1.0671 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:f371b60c stopped in 1.1383 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:af5116d3 stopped in 0.584 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:8302324e stopped in 1.2403 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:74d8fd12 stopped in 1.4067 ms
+2024-03-08 01:40:55.200 +05:30 [DBG] Execution loop Worker:c7a385f2 stopped in 1.3095 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:ebb9c4f0 stopped in 1.5708 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:60f4fb3d stopped in 1.5967 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:352bb92c stopped in 1.7669 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:680e2b4b stopped in 1.7308 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:3c4dffcc stopped in 1.9325 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:dd2c4d49 stopped in 1.9446 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:7cd7ec75 stopped in 2.1102 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:42d57fdf stopped in 2.1175 ms
+2024-03-08 01:40:55.201 +05:30 [DBG] Execution loop Worker:555380e5 stopped in 2.2773 ms
+2024-03-08 01:40:55.202 +05:30 [DBG] Execution loop Worker:1c906036 stopped in 3.0179 ms
+2024-03-08 01:40:55.203 +05:30 [DBG] Execution loop ServerWatchdog:c231686f stopped in 4.069 ms
+2024-03-08 01:40:55.203 +05:30 [DBG] Execution loop RecurringJobScheduler:f2178e19 stopped in 4.2537 ms
+2024-03-08 01:40:55.202 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:e46e2b47 stopped in 3.1971 ms
+2024-03-08 01:40:55.203 +05:30 [DBG] Execution loop Worker:8f8dceca stopped in 4.0645 ms
+2024-03-08 01:40:55.203 +05:30 [DBG] Execution loop DelayedJobScheduler:d00c582e stopped in 4.2568 ms
+2024-03-08 01:40:55.199 +05:30 [DBG] Execution loop ExpirationManager:99c764fa stopped in 0.1227 ms
+2024-03-08 01:40:55.204 +05:30 [WRN] Server suryas-macbook-pro:70070:8d4cbb92 stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-03-08 01:40:55.212 +05:30 [INF] Server suryas-macbook-pro:70070:8d4cbb92 successfully reported itself as stopped in 0.2927 ms
+2024-03-08 01:40:55.212 +05:30 [INF] Server suryas-macbook-pro:70070:8d4cbb92 has been stopped in total 12.9515 ms
+2024-03-08 01:40:55.214 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e successfully announced in 1.6692 ms
+2024-03-08 01:40:55.215 +05:30 [DBG] Execution loop ServerHeartbeatProcess:a714bff2 has started in 0.5899 ms
+2024-03-08 01:40:55.216 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-08 01:40:55.216 +05:30 [DBG] Execution loop ServerWatchdog:4f16e033 has started in 0.3616 ms
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:ef17d2b9 has started in 0.2472 ms
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop ExpirationManager:a77f331d has started in 0.1595 ms
+2024-03-08 01:40:55.217 +05:30 [INF] Removing outdated records from the 'AggregatedCounter' table...
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop CountersAggregator:6e9cf525 has started in 0.128 ms
+2024-03-08 01:40:55.217 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop Worker:cf77b633 has started in 0.329 ms
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop Worker:c5647900 has started in 0.4127 ms
+2024-03-08 01:40:55.217 +05:30 [DBG] Execution loop Worker:e1daba34 has started in 0.5426 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:a5729627 has started in 0.7126 ms
+2024-03-08 01:40:55.218 +05:30 [INF] Outdated records removed from the 'AggregatedCounter' table...
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:a7aef099 has started in 0.7727 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:b57cef54 has started in 0.9111 ms
+2024-03-08 01:40:55.218 +05:30 [INF] Removing outdated records from the 'Counter' table...
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:d2e0f8cf has started in 1.0114 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:31ac36a0 has started in 1.103 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:0742c779 has started in 1.1766 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:69e07c25 has started in 1.2601 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:a900cc97 has started in 1.347 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:4ea91b57 has started in 1.4246 ms
+2024-03-08 01:40:55.218 +05:30 [DBG] Execution loop Worker:d354fe05 has started in 1.5022 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:0a9b9bdd has started in 1.6295 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:ddd56ddb has started in 1.6545 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:0c550261 has started in 1.7284 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:cd2e6bde has started in 1.7961 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:719d6d0a has started in 1.8631 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:3fb75b3e has started in 1.9365 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop Worker:de6e728a has started in 2.0107 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop DelayedJobScheduler:efabc265 has started in 0.1101 ms
+2024-03-08 01:40:55.219 +05:30 [DBG] Execution loop RecurringJobScheduler:2176c5f8 has started in 0.1027 ms
+2024-03-08 01:40:55.219 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e all the dispatchers started
+2024-03-08 01:40:55.220 +05:30 [INF] Outdated records removed from the 'Counter' table...
+2024-03-08 01:40:55.222 +05:30 [INF] Removing outdated records from the 'Job' table...
+2024-03-08 01:40:55.223 +05:30 [INF] Outdated records removed from the 'Job' table...
+2024-03-08 01:40:55.223 +05:30 [INF] Removing outdated records from the 'List' table...
+2024-03-08 01:40:55.224 +05:30 [INF] Outdated records removed from the 'List' table...
+2024-03-08 01:40:55.224 +05:30 [INF] Removing outdated records from the 'Set' table...
+2024-03-08 01:40:55.224 +05:30 [INF] Outdated records removed from the 'Set' table...
+2024-03-08 01:40:55.224 +05:30 [INF] Removing outdated records from the 'Hash' table...
+2024-03-08 01:40:56.229 +05:30 [INF] Outdated records removed from the 'Hash' table...
+2024-03-08 01:40:56.230 +05:30 [INF] Removing outdated records from the 'State' table...
+2024-03-08 01:40:56.231 +05:30 [INF] Outdated records removed from the 'State' table...
+2024-03-08 01:40:56.231 +05:30 [INF] Removing outdated records from the 'JobParameter' table...
+2024-03-08 01:40:56.233 +05:30 [INF] Outdated records removed from the 'JobParameter' table...
+2024-03-08 01:56:25.076 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 02:26:54.937 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 02:42:24.864 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 02:57:55.424 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 03:13:25.952 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 03:26:34.567 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 03:42:04.496 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 04:12:35.706 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 04:28:06.407 +05:30 [DBG] Server suryas-macbook-pro:70070:bc941c0e heartbeat successfully sent
+2024-03-08 04:43:36.302 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 04:43:36.305 +05:30 [INF] 1 servers were removed due to timeout
+2024-03-08 04:43:36.335 +05:30 [WRN] Server suryas-macbook-pro:70070:bc941c0e was considered dead by other servers, restarting...
+2024-03-08 04:43:36.335 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e caught restart signal...
+2024-03-08 04:43:36.336 +05:30 [WRN] Server suryas-macbook-pro:70070:bc941c0e stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-03-08 04:43:36.336 +05:30 [DBG] Execution loop ExpirationManager:a77f331d stopped in 0.583 ms
+2024-03-08 04:43:36.336 +05:30 [DBG] Execution loop Worker:e1daba34 stopped in 0.7634 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:a7aef099 stopped in 0.897 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:c5647900 stopped in 1.0265 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:cf77b633 stopped in 1.1517 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:4ea91b57 stopped in 1.2771 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:a900cc97 stopped in 1.4082 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:a5729627 stopped in 1.5443 ms
+2024-03-08 04:43:36.337 +05:30 [DBG] Execution loop Worker:0742c779 stopped in 1.6686 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:69e07c25 stopped in 1.7926 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:3fb75b3e stopped in 1.9219 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:0c550261 stopped in 2.0488 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:31ac36a0 stopped in 2.1771 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:0a9b9bdd stopped in 2.3042 ms
+2024-03-08 04:43:36.338 +05:30 [DBG] Execution loop Worker:d2e0f8cf stopped in 2.4272 ms
+2024-03-08 04:43:36.339 +05:30 [DBG] Execution loop Worker:de6e728a stopped in 3.1361 ms
+2024-03-08 04:43:36.339 +05:30 [DBG] Execution loop Worker:cd2e6bde stopped in 3.2662 ms
+2024-03-08 04:43:36.339 +05:30 [DBG] Execution loop Worker:ddd56ddb stopped in 3.3791 ms
+2024-03-08 04:43:36.339 +05:30 [DBG] Execution loop Worker:d354fe05 stopped in 3.7813 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop Worker:719d6d0a stopped in 4.0008 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop Worker:b57cef54 stopped in 4.2849 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop CountersAggregator:6e9cf525 stopped in 4.3117 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop ServerWatchdog:4f16e033 stopped in 4.4131 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:ef17d2b9 stopped in 4.5536 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop RecurringJobScheduler:2176c5f8 stopped in 4.6632 ms
+2024-03-08 04:43:36.340 +05:30 [DBG] Execution loop DelayedJobScheduler:efabc265 stopped in 4.765 ms
+2024-03-08 04:43:36.341 +05:30 [DBG] Execution loop ServerHeartbeatProcess:a714bff2 stopped in 5.2382 ms
+2024-03-08 04:43:36.351 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e successfully reported itself as stopped in 0.1775 ms
+2024-03-08 04:43:36.351 +05:30 [INF] Server suryas-macbook-pro:70070:bc941c0e has been stopped in total 10.5035 ms
+2024-03-08 04:43:36.352 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c successfully announced in 0.3297 ms
+2024-03-08 04:43:36.352 +05:30 [DBG] Execution loop ServerHeartbeatProcess:6d5cf382 has started in 0.1985 ms
+2024-03-08 04:43:36.352 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-08 04:43:36.352 +05:30 [DBG] Execution loop ServerWatchdog:9121afe5 has started in 0.1307 ms
+2024-03-08 04:43:36.352 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:e4fc7cf3 has started in 0.1107 ms
+2024-03-08 04:43:36.352 +05:30 [DBG] Execution loop ExpirationManager:8708f511 has started in 0.1405 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop CountersAggregator:d3f48fd9 has started in 0.1093 ms
+2024-03-08 04:43:36.353 +05:30 [INF] Removing outdated records from the 'AggregatedCounter' table...
+2024-03-08 04:43:36.353 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:0d726094 has started in 0.359 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:29b68ad3 has started in 0.5885 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:b939fbc6 has started in 0.6894 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:a64cbe15 has started in 0.8004 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:5edd1b65 has started in 0.8688 ms
+2024-03-08 04:43:36.353 +05:30 [DBG] Execution loop Worker:cbbab43b has started in 0.9306 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:a55da5f8 has started in 1.0232 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:c4d2a83d has started in 1.1345 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:9d499806 has started in 1.2523 ms
+2024-03-08 04:43:36.354 +05:30 [INF] Outdated records removed from the 'AggregatedCounter' table...
+2024-03-08 04:43:36.354 +05:30 [INF] Removing outdated records from the 'Counter' table...
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:5d948762 has started in 1.4498 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:56d5cff4 has started in 1.5448 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:bd2ebb53 has started in 1.6847 ms
+2024-03-08 04:43:36.354 +05:30 [DBG] Execution loop Worker:4bc96281 has started in 1.885 ms
+2024-03-08 04:43:36.355 +05:30 [INF] Outdated records removed from the 'Counter' table...
+2024-03-08 04:43:36.355 +05:30 [INF] Removing outdated records from the 'Job' table...
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:c2f5a559 has started in 2.0669 ms
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:89abb92a has started in 2.1703 ms
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:a7f604c1 has started in 2.2656 ms
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:3af98ab8 has started in 2.3529 ms
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:2eeae285 has started in 2.4683 ms
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:7a545c11 has started in 2.6007 ms
+2024-03-08 04:43:36.355 +05:30 [INF] Outdated records removed from the 'Job' table...
+2024-03-08 04:43:36.355 +05:30 [DBG] Execution loop Worker:2019cfc5 has started in 2.722 ms
+2024-03-08 04:43:36.355 +05:30 [INF] Removing outdated records from the 'List' table...
+2024-03-08 04:43:36.356 +05:30 [DBG] Execution loop DelayedJobScheduler:b8ac0d3b has started in 0.2222 ms
+2024-03-08 04:43:36.356 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c all the dispatchers started
+2024-03-08 04:43:36.356 +05:30 [DBG] Execution loop RecurringJobScheduler:58f3fc12 has started in 0.1907 ms
+2024-03-08 04:43:36.356 +05:30 [INF] Outdated records removed from the 'List' table...
+2024-03-08 04:43:36.356 +05:30 [INF] Removing outdated records from the 'Set' table...
+2024-03-08 04:43:36.357 +05:30 [INF] Outdated records removed from the 'Set' table...
+2024-03-08 04:43:36.358 +05:30 [INF] Removing outdated records from the 'Hash' table...
+2024-03-08 04:43:37.362 +05:30 [INF] Outdated records removed from the 'Hash' table...
+2024-03-08 04:43:37.362 +05:30 [INF] Removing outdated records from the 'State' table...
+2024-03-08 04:43:37.363 +05:30 [INF] Outdated records removed from the 'State' table...
+2024-03-08 04:43:37.364 +05:30 [INF] Removing outdated records from the 'JobParameter' table...
+2024-03-08 04:43:37.365 +05:30 [INF] Outdated records removed from the 'JobParameter' table...
+2024-03-08 04:59:06.277 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 05:14:36.256 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 05:27:37.032 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 05:46:41.446 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 06:02:11.375 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 06:28:16.797 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 06:43:46.731 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 07:05:49.118 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 07:21:19.846 +05:30 [DBG] Server suryas-macbook-pro:70070:f431219c heartbeat successfully sent
+2024-03-08 07:48:02.349 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 07:48:02.351 +05:30 [INF] 1 servers were removed due to timeout
+2024-03-08 07:48:02.386 +05:30 [WRN] Server suryas-macbook-pro:70070:f431219c was considered dead by other servers, restarting...
+2024-03-08 07:48:02.387 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c caught restart signal...
+2024-03-08 07:48:02.387 +05:30 [DBG] Execution loop ServerHeartbeatProcess:6d5cf382 stopped in 0.3348 ms
+2024-03-08 07:48:02.388 +05:30 [WRN] Server suryas-macbook-pro:70070:f431219c stopped non-gracefully due to ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2024-03-08 07:48:02.388 +05:30 [DBG] Execution loop ExpirationManager:8708f511 stopped in 1.2897 ms
+2024-03-08 07:48:02.395 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c successfully reported itself as stopped in 0.2698 ms
+2024-03-08 07:48:02.396 +05:30 [INF] Server suryas-macbook-pro:70070:f431219c has been stopped in total 8.3661 ms
+2024-03-08 07:48:02.389 +05:30 [DBG] Execution loop Worker:3af98ab8 stopped in 1.5613 ms
+2024-03-08 07:48:02.389 +05:30 [DBG] Execution loop Worker:4bc96281 stopped in 1.7689 ms
+2024-03-08 07:48:02.389 +05:30 [DBG] Execution loop Worker:5d948762 stopped in 1.949 ms
+2024-03-08 07:48:02.389 +05:30 [DBG] Execution loop Worker:a64cbe15 stopped in 2.1273 ms
+2024-03-08 07:48:02.389 +05:30 [DBG] Execution loop Worker:5edd1b65 stopped in 2.3006 ms
+2024-03-08 07:48:02.397 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 successfully announced in 1.0108 ms
+2024-03-08 07:48:02.390 +05:30 [DBG] Execution loop Worker:c2f5a559 stopped in 2.7152 ms
+2024-03-08 07:48:02.390 +05:30 [DBG] Execution loop Worker:bd2ebb53 stopped in 3.1369 ms
+2024-03-08 07:48:02.391 +05:30 [DBG] Execution loop Worker:2019cfc5 stopped in 3.3841 ms
+2024-03-08 07:48:02.391 +05:30 [DBG] Execution loop Worker:56d5cff4 stopped in 3.6051 ms
+2024-03-08 07:48:02.391 +05:30 [DBG] Execution loop Worker:89abb92a stopped in 3.8271 ms
+2024-03-08 07:48:02.391 +05:30 [DBG] Execution loop Worker:a7f604c1 stopped in 4.0287 ms
+2024-03-08 07:48:02.391 +05:30 [DBG] Execution loop Worker:29b68ad3 stopped in 4.2474 ms
+2024-03-08 07:48:02.392 +05:30 [DBG] Execution loop Worker:0d726094 stopped in 4.9126 ms
+2024-03-08 07:48:02.392 +05:30 [DBG] Execution loop Worker:7a545c11 stopped in 5.0441 ms
+2024-03-08 07:48:02.392 +05:30 [DBG] Execution loop Worker:c4d2a83d stopped in 5.1844 ms
+2024-03-08 07:48:02.392 +05:30 [DBG] Execution loop Worker:a55da5f8 stopped in 5.3144 ms
+2024-03-08 07:48:02.393 +05:30 [DBG] Execution loop Worker:9d499806 stopped in 5.9084 ms
+2024-03-08 07:48:02.393 +05:30 [DBG] Execution loop Worker:b939fbc6 stopped in 6.1636 ms
+2024-03-08 07:48:02.393 +05:30 [DBG] Execution loop CountersAggregator:d3f48fd9 stopped in 6.1955 ms
+2024-03-08 07:48:02.393 +05:30 [DBG] Execution loop ServerWatchdog:9121afe5 stopped in 6.3245 ms
+2024-03-08 07:48:02.394 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:e4fc7cf3 stopped in 6.4584 ms
+2024-03-08 07:48:02.394 +05:30 [DBG] Execution loop RecurringJobScheduler:58f3fc12 stopped in 6.6011 ms
+2024-03-08 07:48:02.394 +05:30 [DBG] Execution loop DelayedJobScheduler:b8ac0d3b stopped in 6.7284 ms
+2024-03-08 07:48:02.394 +05:30 [DBG] Execution loop Worker:cbbab43b stopped in 7.1954 ms
+2024-03-08 07:48:02.390 +05:30 [DBG] Execution loop Worker:2eeae285 stopped in 2.4722 ms
+2024-03-08 07:48:02.397 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2024-03-08 07:48:02.397 +05:30 [DBG] Execution loop ServerHeartbeatProcess:6118a56d has started in 0.3335 ms
+2024-03-08 07:48:02.407 +05:30 [DBG] Execution loop ServerWatchdog:19c3928d has started in 0.4571 ms
+2024-03-08 07:48:02.410 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:9f324781 has started in 0.5877 ms
+2024-03-08 07:48:02.411 +05:30 [DBG] Execution loop ExpirationManager:f17e9204 has started in 0.1864 ms
+2024-03-08 07:48:02.411 +05:30 [INF] Removing outdated records from the 'AggregatedCounter' table...
+2024-03-08 07:48:02.413 +05:30 [DBG] Execution loop CountersAggregator:112720d2 has started in 0.2515 ms
+2024-03-08 07:48:02.413 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 07:48:02.414 +05:30 [INF] Outdated records removed from the 'AggregatedCounter' table...
+2024-03-08 07:48:02.414 +05:30 [INF] Removing outdated records from the 'Counter' table...
+2024-03-08 07:48:02.414 +05:30 [DBG] Execution loop Worker:174a6985 has started in 0.7729 ms
+2024-03-08 07:48:02.414 +05:30 [DBG] Execution loop Worker:363cc787 has started in 0.9689 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:f00245af has started in 1.1127 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:968b828f has started in 1.2336 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:c1508c57 has started in 1.4291 ms
+2024-03-08 07:48:02.415 +05:30 [INF] Outdated records removed from the 'Counter' table...
+2024-03-08 07:48:02.415 +05:30 [INF] Removing outdated records from the 'Job' table...
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:15c7eb56 has started in 1.7519 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:6a1c21ea has started in 1.7804 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:16156a85 has started in 1.8657 ms
+2024-03-08 07:48:02.415 +05:30 [DBG] Execution loop Worker:5637ed7c has started in 1.972 ms
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:c65f082b has started in 2.1805 ms
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:1004df5c has started in 2.3352 ms
+2024-03-08 07:48:02.416 +05:30 [INF] Outdated records removed from the 'Job' table...
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:4c2037a1 has started in 2.4563 ms
+2024-03-08 07:48:02.416 +05:30 [INF] Removing outdated records from the 'List' table...
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:c87866c6 has started in 2.6675 ms
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:82c8b4e9 has started in 2.7874 ms
+2024-03-08 07:48:02.416 +05:30 [DBG] Execution loop Worker:72e4fada has started in 2.9284 ms
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop Worker:be107d83 has started in 3.0447 ms
+2024-03-08 07:48:02.417 +05:30 [INF] Outdated records removed from the 'List' table...
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop Worker:4b1ae7b8 has started in 3.203 ms
+2024-03-08 07:48:02.417 +05:30 [INF] Removing outdated records from the 'Set' table...
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop Worker:bd227b67 has started in 3.317 ms
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop Worker:5a6f18fe has started in 3.4699 ms
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop Worker:2b12be9f has started in 3.5017 ms
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop DelayedJobScheduler:70dfd490 has started in 0.2451 ms
+2024-03-08 07:48:02.417 +05:30 [INF] Outdated records removed from the 'Set' table...
+2024-03-08 07:48:02.417 +05:30 [INF] Removing outdated records from the 'Hash' table...
+2024-03-08 07:48:02.417 +05:30 [DBG] Execution loop RecurringJobScheduler:ac731e64 has started in 0.2148 ms
+2024-03-08 07:48:02.417 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 all the dispatchers started
+2024-03-08 07:48:02.418 +05:30 [INF] Outdated records removed from the 'Hash' table...
+2024-03-08 07:48:02.418 +05:30 [INF] Removing outdated records from the 'State' table...
+2024-03-08 07:48:02.419 +05:30 [INF] Outdated records removed from the 'State' table...
+2024-03-08 07:48:02.419 +05:30 [INF] Removing outdated records from the 'JobParameter' table...
+2024-03-08 07:48:04.424 +05:30 [INF] Outdated records removed from the 'JobParameter' table...
+2024-03-08 07:48:32.406 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 07:49:02.409 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 07:49:32.413 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:05:02.344 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:20:32.274 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:29:44.258 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:30:14.262 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:30:44.267 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:31:14.270 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:31:52.286 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 08:31:52.321 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:32:22.325 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:32:52.329 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:33:22.333 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:33:52.337 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:34:22.339 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:34:52.341 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:35:22.344 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:35:52.347 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:36:22.350 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:36:52.289 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 08:36:52.355 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:37:22.359 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:37:52.362 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:38:22.366 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:38:52.370 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:39:22.374 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:39:52.377 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:40:22.380 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:40:52.384 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:41:22.387 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:41:52.290 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 08:41:52.390 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:42:22.394 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:42:52.397 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:43:22.403 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:43:52.408 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:44:22.412 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:44:52.415 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:45:22.418 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:45:52.425 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:46:22.429 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:46:52.296 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 08:46:52.435 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:47:22.440 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:47:52.444 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:48:22.449 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:48:53.077 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:49:23.146 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 08:49:53.151 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:05:23.077 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:06:38.447 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:07:08.452 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:07:38.085 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 09:07:38.456 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:08:08.458 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:08:38.463 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:09:08.465 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:20:05.500 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:20:35.505 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:27:29.463 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:36:23.433 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:36:53.436 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:37:23.439 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:37:53.580 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 09:37:53.982 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:38:23.985 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:53:40.335 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:54:10.338 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:54:40.341 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:55:10.345 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:55:40.347 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:56:10.356 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:56:40.362 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:57:10.364 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:57:39.929 +05:30 [DBG] Aggregating records in 'Counter' table...
+2024-03-08 09:57:40.367 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:58:10.371 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:58:40.375 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:59:10.378 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:59:40.382 +05:30 [DBG] Server suryas-macbook-pro:70070:581a38c7 heartbeat successfully sent
+2024-03-08 09:59:51.087 +05:30 [DBG] Hangfire Server is stopping...
+2024-03-08 09:59:51.087 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 caught stopping signal...
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop CountersAggregator:112720d2 stopped in 0 ms
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop Worker:be107d83 stopped in 0.0997 ms
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop Worker:6a1c21ea stopped in 0.1206 ms
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop Worker:4c2037a1 stopped in 0.1586 ms
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop Worker:2b12be9f stopped in 0.1806 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:5a6f18fe stopped in 0.2219 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop ServerJobCancellationWatcher:9f324781 stopped in 0.7474 ms
+2024-03-08 09:59:51.087 +05:30 [INF] Application is shutting down...
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop Worker:c87866c6 stopped in 0.1795 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:363cc787 stopped in 0.2225 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:16156a85 stopped in 0.2991 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:f00245af stopped in 1.11 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:c1508c57 stopped in 1.1497 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:4b1ae7b8 stopped in 0.3135 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:1004df5c stopped in 0.3134 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:72e4fada stopped in 0.3435 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:82c8b4e9 stopped in 0.3455 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:15c7eb56 stopped in 0.3512 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:5637ed7c stopped in 0.3567 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:174a6985 stopped in 0.3742 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop DelayedJobScheduler:70dfd490 stopped in 0.3872 ms
+2024-03-08 09:59:51.087 +05:30 [DBG] Execution loop ExpirationManager:f17e9204 stopped in 0 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:968b828f stopped in 0.3642 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Hosting stopping
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop RecurringJobScheduler:ac731e64 stopped in 0.7129 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop ServerWatchdog:19c3928d stopped in 0.7134 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:c65f082b stopped in 1.015 ms
+2024-03-08 09:59:51.088 +05:30 [DBG] Execution loop Worker:bd227b67 stopped in 0.3051 ms
+2024-03-08 09:59:51.101 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 All dispatchers stopped
+2024-03-08 09:59:51.101 +05:30 [DBG] Execution loop ServerHeartbeatProcess:6118a56d stopped in 0.0794 ms
+2024-03-08 09:59:51.102 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 successfully reported itself as stopped in 0.2177 ms
+2024-03-08 09:59:51.102 +05:30 [INF] Server suryas-macbook-pro:70070:581a38c7 has been stopped in total 14.4782 ms
+2024-03-08 09:59:51.102 +05:30 [DBG] Execution loop BackgroundServerProcess:87996424 stopped in 14.5327 ms
+2024-03-08 09:59:51.116 +05:30 [DBG] Hangfire Server is stopping...
+2024-03-08 09:59:51.116 +05:30 [DBG] Hosting stopped

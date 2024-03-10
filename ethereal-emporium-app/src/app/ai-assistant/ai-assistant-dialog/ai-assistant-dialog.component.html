@@ -1,0 +1,19 @@
+<div class="ai-assistant-container">
+  <mat-toolbar>
+    <span>How may I help you?</span>
+    <span class="spacer"></span>
+    <mat-icon>close</mat-icon>
+  </mat-toolbar>
+
+  <div class="ai-assistant-container__content"></div>
+
+  <mat-form-field class="ai-assistant-container__prompt">
+    <textarea
+      matInput
+      cdkTextareaAutosize
+      #autosize="cdkTextareaAutosize"
+      cdkAutosizeMinRows="1"
+      cdkAutosizeMaxRows="5"
+    ></textarea>
+  </mat-form-field>
+</div>
