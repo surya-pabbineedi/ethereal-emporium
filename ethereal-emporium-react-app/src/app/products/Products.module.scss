@@ -1,4 +1,18 @@
+.products-container-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products-container-loader {
+    display: flex;
+    gap: 1rem;
+}
+
 .products-container {
+    margin-top: 1rem;
+    
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;

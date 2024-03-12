@@ -1,11 +1,15 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ProductResponse } from '../models/ProductResponse';
+import { Product, ProductResponse } from '../models/ProductResponse';
 
-export const fetchProducts = createAsyncThunk(
+export const fetchProducts = createAsyncThunk<Product[], string>(
   'products/fetchProducts',
-  async (_, { rejectWithValue }) => {
+  async (query, { rejectWithValue }) => {
     try {
-      const productsResponse = await fetch('https://dummyjson.com/products');
+      const productsResponse = await fetch(
+        query
+          ? `https://dummyjson.com/products/search?q=${query}`
+          : 'https://dummyjson.com/products'
+      );
 
       if (!productsResponse.ok) {
         return rejectWithValue(productsResponse.statusText);
