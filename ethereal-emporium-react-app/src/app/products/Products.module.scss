@@ -1,7 +1,5 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.products-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
