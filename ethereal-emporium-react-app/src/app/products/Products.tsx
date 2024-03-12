@@ -10,12 +10,8 @@ import SearchBar from './SearchBar';
 export function Products() {
   const products = useSelector((state: RootState) => state.products.products);
   const [searchQuery, setSearchQuery] = useState('');
-  const loadingProducts = useSelector(
-    (state: RootState) => state.products.loading
-  );
-  const productsLoadingError = useSelector(
-    (state: RootState) => state.products.error
-  );
+  const loadingProducts = useSelector((state: RootState) => state.products.loading);
+  const productsLoadingError = useSelector((state: RootState) => state.products.error);
   const dispatch = useDispatch<AppStoreDispatch>();
 
   useEffect(() => {
@@ -27,26 +23,18 @@ export function Products() {
   return (
     <>
       <div className={styles['products-container-wrapper']}>
-        <SearchBar
-          loading={loadingProducts}
-          query={searchQuery}
-          setSearchQuery={(query) => setSearchQuery(query)}
-        />
+        <SearchBar loading={loadingProducts} query={searchQuery} setSearchQuery={(query) => setSearchQuery(query)} />
       </div>
-      <div  className={styles['products-container-loader']}>
+      <div className={styles['products-container-loader']}>
         {loadingProducts && <div>Loading products...</div>}
-        {productsLoadingError && (
-          <div>Error loading products: {productsLoadingError}</div>
-        )}
+        {productsLoadingError && <div>Error loading products: {productsLoadingError}</div>}
       </div>
       <div className={styles['products-container']}>
         {products.map((product: Product) => {
           return <ProductCard key={product.id} product={product} />;
         })}
 
-        {products.length === 0 && !loadingProducts && (
-          <div>No products found</div>
-        )}
+        {products.length === 0 && !loadingProducts && <div>No products found</div>}
       </div>
     </>
   );

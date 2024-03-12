@@ -17,10 +17,7 @@ const AuthenticationContext = createContext<{
 });
 
 export const AuthenticationProvider = () => {
-  const [user, setUser] = useLocalStorage<User | undefined>(
-    'ee_user',
-    undefined
-  );
+  const [user, setUser] = useLocalStorage<User | undefined>('ee_user', undefined);
   const navigate = useNavigate();
 
   const login = async (loginRequest: LoginRequest) => {

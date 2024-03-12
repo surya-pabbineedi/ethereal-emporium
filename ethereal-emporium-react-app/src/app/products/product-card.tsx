@@ -36,12 +36,7 @@ function ProductCard({ product }: ProductCardProps) {
         title={product.title}
         subheader={product.rating}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={product.images[0]}
-        alt={product.title}
-      />
+      <CardMedia component="img" height="194" image={product.images[0]} alt={product.title} />
       <CardContent>
         <Typography variant="body1" color="text.primary">
           <b>{product.price}</b>

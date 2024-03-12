@@ -20,11 +20,7 @@ const SearchBar = ({
         endAdornment: loading ? (
           <CircularProgress />
         ) : (
-          <IconButton
-            type="submit"
-            aria-label="search"
-            onClick={() => setSearchQuery('')}
-          >
+          <IconButton type="submit" aria-label="search" onClick={() => setSearchQuery('')}>
             <Clear style={{ fill: 'grey' }} />
           </IconButton>
         ),
